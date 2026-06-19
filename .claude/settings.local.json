@@ -35,7 +35,9 @@
       "Bash(yt-dlp --flat-playlist --dump-single-json \"ytsearch5:N5 語彙 完全 日本語\")",
       "Bash(yt-dlp --flat-playlist --dump-single-json \"ytsearch10:N5 vocabulary Japanese complete all words\")",
       "Bash(open *)",
-      "Bash(grep -oP \"\\\\$\\\\\\('\\\\K[^']+\" ui/app.js)"
+      "Bash(grep -oP \"\\\\$\\\\\\('\\\\K[^']+\" ui/app.js)",
+      "Bash(git check-ignore *)",
+      "Bash(git *)"
     ]
   }
 }
