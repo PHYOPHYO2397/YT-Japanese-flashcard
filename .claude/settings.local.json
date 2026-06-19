@@ -4,6 +4,25 @@
     "youtube",
     "magic"
   ],
+  "mcpServers": {
+    "youtube-transcript": {
+      "description": "Primary YouTube transcript extraction.",
+      "tools": ["get_transcript"]
+    },
+    "youtube": {
+      "description": "Fallback YouTube transcript extraction.",
+      "tools": ["download_youtube_url"]
+    },
+    "magic": {
+      "description": "21st.dev UI component builder.",
+      "tools": [
+        "21st_magic_component_builder",
+        "21st_magic_component_inspiration",
+        "21st_magic_component_refiner",
+        "logo_search"
+      ]
+    }
+  },
   "permissions": {
     "allow": [
       "Bash(bash *)",
