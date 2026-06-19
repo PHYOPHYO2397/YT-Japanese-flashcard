@@ -1,4 +1,9 @@
 {
+  "enabledMcpjsonServers": [
+    "youtube-transcript",
+    "youtube",
+    "magic"
+  ],
   "permissions": {
     "allow": [
       "Bash(bash *)",
