@@ -1,0 +1,30 @@
+Subtitle Downloader — Summary Report
+=====================================
+Date: 2026-06-18
+Query: "minna no nihongo lesson 26"
+Mode: Search (top 5)
+Output: /Users/phyophyomyatthu/YT-Japanese-flashcard/skills/subtitle-downloader-workspace/iteration-1/search-top5/with_skill/outputs/
+
+---
+
+Downloaded:
+  (none)
+
+Skipped:
+  ALL VIDEOS — Unable to reach YouTube due to sandbox restrictions.
+
+---
+
+Root Cause:
+The execution environment restricts all network access from yt-dlp, WebFetch,
+and the MCP YouTube transcript tools. The only available remote tool (WebSearch)
+returns generated placeholder URLs, not real YouTube video links. Without actual
+video URLs and network access to download subtitles, this skill cannot complete.
+
+Required fixes:
+  - Enable yt-dlp network operations in the sandbox
+  - OR enable the mcp__youtube-transcript tool
+  - OR enable WebFetch for YouTube/Google
+  - OR provide direct, verified YouTube video URLs
+
+Subtitle files (.srt): 0 downloaded

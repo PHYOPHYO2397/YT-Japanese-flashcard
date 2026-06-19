@@ -1,0 +1,717 @@
+{
+  "meta": {
+    "video_id": "enTYTbE8HKs",
+    "video_title": "JLPT N5 Vocabulary - N5 語彙 日本語能力試験",
+    "youtube_url": "https://www.youtube.com/watch?v=enTYTbE8HKs",
+    "generated_at": "2026-06-18T13:57:49Z",
+    "total_cards": 42,
+    "jlpt_breakdown": {
+      "N5": 35,
+      "N4": 7
+    }
+  },
+  "cards": [
+    {
+      "id": "card-001",
+      "front": "暑い",
+      "back": {
+        "reading": "あつい",
+        "meaning": "hot (weather)",
+        "part_of_speech": "adjective",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=149s",
+      "secondary_links": [],
+      "context_snippet": "暑いですねエアコンをつけましょう"
+    },
+    {
+      "id": "card-002",
+      "front": "イチゴ",
+      "back": {
+        "reading": "いちご",
+        "meaning": "strawberry",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=370s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=376s"
+      ],
+      "context_snippet": "このイチゴは甘くておいしいです"
+    },
+    {
+      "id": "card-003",
+      "front": "エアコン",
+      "back": {
+        "reading": "えあこん",
+        "meaning": "air conditioner",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=149s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=153s"
+      ],
+      "context_snippet": "暑いですねエアコンをつけましょう"
+    },
+    {
+      "id": "card-004",
+      "front": "美味しい",
+      "back": {
+        "reading": "おいしい",
+        "meaning": "delicious",
+        "part_of_speech": "adjective",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=370s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=376s"
+      ],
+      "context_snippet": "このイチゴは甘くておいしいです"
+    },
+    {
+      "id": "card-005",
+      "front": "おかえりなさい",
+      "back": {
+        "reading": "おかえりなさい",
+        "meaning": "welcome back",
+        "part_of_speech": "expression",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=419s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=421s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=428s"
+      ],
+      "context_snippet": "おかえりなさい"
+    },
+    {
+      "id": "card-006",
+      "front": "お金",
+      "back": {
+        "reading": "おかね",
+        "meaning": "money",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "お金がありません"
+    },
+    {
+      "id": "card-007",
+      "front": "会う",
+      "back": {
+        "reading": "あう",
+        "meaning": "to meet",
+        "part_of_speech": "verb",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "ではまた次のレッスンで会いましょう"
+    },
+    {
+      "id": "card-008",
+      "front": "学校",
+      "back": {
+        "reading": "がっこう",
+        "meaning": "school",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=532s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=649s"
+      ],
+      "context_snippet": "学校は6月から8月まで3カ月休みです"
+    },
+    {
+      "id": "card-009",
+      "front": "甘い",
+      "back": {
+        "reading": "あまい",
+        "meaning": "sweet",
+        "part_of_speech": "adjective",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "このイチゴは甘くておいしいです"
+    },
+    {
+      "id": "card-010",
+      "front": "休み",
+      "back": {
+        "reading": "やすみ",
+        "meaning": "rest; holiday; vacation",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=524s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=532s"
+      ],
+      "context_snippet": "6月から8月まで3カ月休みです"
+    },
+    {
+      "id": "card-011",
+      "front": "魚",
+      "back": {
+        "reading": "さかな",
+        "meaning": "fish",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 2
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=274s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=280s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=565s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=573s"
+      ],
+      "context_snippet": "魚はあまり好きじゃないです"
+    },
+    {
+      "id": "card-012",
+      "front": "今日",
+      "back": {
+        "reading": "きょう",
+        "meaning": "today",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=618s",
+      "secondary_links": [],
+      "context_snippet": "今日は8日で明日は9日です"
+    },
+    {
+      "id": "card-013",
+      "front": "月",
+      "back": {
+        "reading": "つき",
+        "meaning": "month; moon",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=524s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=532s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=544s"
+      ],
+      "context_snippet": "6月から8月まで3カ月休みです"
+    },
+    {
+      "id": "card-014",
+      "front": "言う",
+      "back": {
+        "reading": "いう",
+        "meaning": "to say",
+        "part_of_speech": "verb",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=340s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=485s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=582s"
+      ],
+      "context_snippet": "飛車いうの仇メジャークリエーションボロディン japanese to the"
+    },
+    {
+      "id": "card-015",
+      "front": "好き",
+      "back": {
+        "reading": "すき",
+        "meaning": "like; love",
+        "part_of_speech": "adjective",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=274s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=280s"
+      ],
+      "context_snippet": "魚はあまり好きじゃないです"
+    },
+    {
+      "id": "card-016",
+      "front": "仕事",
+      "back": {
+        "reading": "しごと",
+        "meaning": "work; job",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=467s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=471s"
+      ],
+      "context_snippet": "仕事に行きます"
+    },
+    {
+      "id": "card-017",
+      "front": "次",
+      "back": {
+        "reading": "つぎ",
+        "meaning": "next",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=658s",
+      "secondary_links": [],
+      "context_snippet": "ではまた次のレッスンで会いましょう"
+    },
+    {
+      "id": "card-018",
+      "front": "食べる",
+      "back": {
+        "reading": "たべる",
+        "meaning": "to eat",
+        "part_of_speech": "verb",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "魚は食べますけど肉は食べません"
+    },
+    {
+      "id": "card-019",
+      "front": "誰",
+      "back": {
+        "reading": "だれ",
+        "meaning": "who",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=328s",
+      "secondary_links": [],
+      "context_snippet": "あの人は誰ですか"
+    },
+    {
+      "id": "card-020",
+      "front": "電気",
+      "back": {
+        "reading": "でんき",
+        "meaning": "electricity; light",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "電気をつけました"
+    },
+    {
+      "id": "card-021",
+      "front": "日",
+      "back": {
+        "reading": "ひ",
+        "meaning": "day; sun",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=612s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=614s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=618s"
+      ],
+      "context_snippet": "8日で"
+    },
+    {
+      "id": "card-022",
+      "front": "肉",
+      "back": {
+        "reading": "にく",
+        "meaning": "meat",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=573s",
+      "secondary_links": [],
+      "context_snippet": "魚は食べますけど肉は食べません"
+    },
+    {
+      "id": "card-023",
+      "front": "日本語",
+      "back": {
+        "reading": "にほんご",
+        "meaning": "Japanese language",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "日本語で何と言いますか"
+    },
+    {
+      "id": "card-024",
+      "front": "部屋",
+      "back": {
+        "reading": "へや",
+        "meaning": "room",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "この部屋は汚いですね"
+    },
+    {
+      "id": "card-025",
+      "front": "帽子",
+      "back": {
+        "reading": "ぼうし",
+        "meaning": "hat; cap",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=194s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=199s"
+      ],
+      "context_snippet": "時々帽子をかぶります"
+    },
+    {
+      "id": "card-026",
+      "front": "枚",
+      "back": {
+        "reading": "まい",
+        "meaning": "counter for flat items",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=227s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=234s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=653s"
+      ],
+      "context_snippet": "コンサートのチケットが4枚あります"
+    },
+    {
+      "id": "card-027",
+      "front": "毎朝",
+      "back": {
+        "reading": "まいあさ",
+        "meaning": "every morning",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=463s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=471s"
+      ],
+      "context_snippet": "毎朝7時に起きてい"
+    },
+    {
+      "id": "card-028",
+      "front": "明日",
+      "back": {
+        "reading": "あした",
+        "meaning": "tomorrow",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=614s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=618s"
+      ],
+      "context_snippet": "明日は9日です"
+    },
+    {
+      "id": "card-029",
+      "front": "一番",
+      "back": {
+        "reading": "いちばん",
+        "meaning": "number one; best; first",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=94s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=108s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=270s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=366s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=563s"
+      ],
+      "context_snippet": "から一番いいいいもの"
+    },
+    {
+      "id": "card-030",
+      "front": "行く",
+      "back": {
+        "reading": "いく",
+        "meaning": "to go",
+        "part_of_speech": "verb",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "毎朝7時に起きて仕事に行きます"
+    },
+    {
+      "id": "card-031",
+      "front": "起きる",
+      "back": {
+        "reading": "おきる",
+        "meaning": "to get up; wake up",
+        "part_of_speech": "verb",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "毎朝7時に起きて仕事に行きます"
+    },
+    {
+      "id": "card-032",
+      "front": "汚い",
+      "back": {
+        "reading": "きたない",
+        "meaning": "dirty",
+        "part_of_speech": "adjective",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "この部屋は汚いですね"
+    },
+    {
+      "id": "card-033",
+      "front": "番",
+      "back": {
+        "reading": "ばん",
+        "meaning": "number; order; turn",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=94s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=108s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=189s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=222s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=270s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=318s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=366s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=417s"
+      ],
+      "context_snippet": "から一番いいいいもの"
+    },
+    {
+      "id": "card-034",
+      "front": "あまり",
+      "back": {
+        "reading": "あまり",
+        "meaning": "not very (with negative)",
+        "part_of_speech": "adverb",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=274s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=280s"
+      ],
+      "context_snippet": "魚はあまり好きじゃないです"
+    },
+    {
+      "id": "card-035",
+      "front": "あの人",
+      "back": {
+        "reading": "あのひと",
+        "meaning": "that person",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=324s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=328s"
+      ],
+      "context_snippet": "あの人は"
+    },
+    {
+      "id": "card-036",
+      "front": "かぶる",
+      "back": {
+        "reading": "かぶる",
+        "meaning": "to wear (on head)",
+        "part_of_speech": "verb",
+        "jlpt_level": "N4",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "時々帽子をかぶります"
+    },
+    {
+      "id": "card-037",
+      "front": "コンサート",
+      "back": {
+        "reading": "こんさーと",
+        "meaning": "concert",
+        "part_of_speech": "noun",
+        "jlpt_level": "N4",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=227s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=234s"
+      ],
+      "context_snippet": "コンサートのチケットが4枚あります"
+    },
+    {
+      "id": "card-038",
+      "front": "チケット",
+      "back": {
+        "reading": "ちけっと",
+        "meaning": "ticket",
+        "part_of_speech": "noun",
+        "jlpt_level": "N4",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=227s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=234s"
+      ],
+      "context_snippet": "コンサートのチケットが4枚あります"
+    },
+    {
+      "id": "card-039",
+      "front": "つける",
+      "back": {
+        "reading": "つける",
+        "meaning": "to turn on",
+        "part_of_speech": "verb",
+        "jlpt_level": "N4",
+        "occurrence_count": 2
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=0s",
+      "secondary_links": [],
+      "context_snippet": "暑いですねエアコンをつけましょう"
+    },
+    {
+      "id": "card-040",
+      "front": "時々",
+      "back": {
+        "reading": "ときどき",
+        "meaning": "sometimes",
+        "part_of_speech": "adverb",
+        "jlpt_level": "N4",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=194s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=199s"
+      ],
+      "context_snippet": "時々帽子をかぶります"
+    },
+    {
+      "id": "card-041",
+      "front": "答え",
+      "back": {
+        "reading": "こたえ",
+        "meaning": "answer",
+        "part_of_speech": "noun",
+        "jlpt_level": "N4",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=188s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=222s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=269s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=318s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=416s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=460s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=519s",
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=563s"
+      ],
+      "context_snippet": "答えは"
+    },
+    {
+      "id": "card-042",
+      "front": "レッスン",
+      "back": {
+        "reading": "れっすん",
+        "meaning": "lesson",
+        "part_of_speech": "noun",
+        "jlpt_level": "N4",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=enTYTbE8HKs&t=57s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=enTYTbE8HKs&t=658s"
+      ],
+      "context_snippet": "re so me 9 s 4 jobd レッスン卒0号 ppb は需要4 n 5"
+    }
+  ]
+}

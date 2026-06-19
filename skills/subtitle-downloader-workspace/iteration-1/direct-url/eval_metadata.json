@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "direct-url",
+  "prompt": "get the Japanese subs from this video: https://www.youtube.com/watch?v=lEVAIyfVzXM",
+  "assertions": []
+}

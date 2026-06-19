@@ -1,0 +1,23 @@
+{
+  "skill_name": "subtitle-downloader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "download Japanese subtitles for minna no nihongo lesson 26",
+      "expected_output": "SRT subtitle files from top 5 YouTube search results for 'minna no nihongo lesson 26', saved to subtitles/{channel_name}/{video_title}.ja.srt, with manual captions preferred over auto-generated. Summary report listing which succeeded (manual vs auto) and which were skipped.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "get the Japanese subs from this video: https://www.youtube.com/watch?v=lEVAIyfVzXM",
+      "expected_output": "Single SRT subtitle file from the specified YouTube video, saved to subtitles/{channel_name}/{video_title}.ja.srt, with manual captions preferred over auto-generated. Report indicating whether it succeeded and caption type.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need Japanese subtitles for top 3 results of Japanese N4 listening practice",
+      "expected_output": "SRT subtitle files from top 3 YouTube search results for 'Japanese N4 listening practice', saved to subtitles/{channel_name}/{video_title}.ja.srt, with manual captions preferred over auto-generated. Summary report for exactly 3 videos.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+yt-dlp --write-auto-subs --sub-format srt --skip-download --sub-langs "ja" "$1"

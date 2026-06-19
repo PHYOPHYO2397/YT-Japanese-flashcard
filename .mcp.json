@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "youtube-transcript": {
+      "description": "Primary YouTube transcript extraction. Language-aware — supports lang: 'ja' for Japanese captions, millisecond timestamps, ad stripping. Used by the flashcard-generator skill as the first attempt in the two-tool fallback strategy.",
+      "tools": ["get_transcript"]
+    },
+    "youtube": {
+      "description": "Fallback YouTube transcript extraction. Legacy MCP — used when youtube-transcript fails. Downloads subtitle text with timestamps.",
+      "tools": ["download_youtube_url"]
+    },
+    "magic": {
+      "description": "21st.dev UI component builder. Used to design and refine UI components — built the Mochi landing page (index.html) with hero section, pipeline visualization, interactive demo card, filter controls, and animated stats.",
+      "tools": [
+        "21st_magic_component_builder",
+        "21st_magic_component_inspiration",
+        "21st_magic_component_refiner",
+        "logo_search"
+      ]
+    }
+  }
+}

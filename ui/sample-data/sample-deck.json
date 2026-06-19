@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "video_id": "sample12345",
+    "video_title": "Japanese Listening Practice - Daily Conversation",
+    "youtube_url": "https://www.youtube.com/watch?v=sample12345",
+    "generated_at": "2026-06-18T12:00:00Z",
+    "total_cards": 12,
+    "jlpt_breakdown": {
+      "N5": 4,
+      "N4": 4,
+      "N3": 4
+    }
+  },
+  "cards": [
+    {
+      "id": "card-001",
+      "front": "食べる",
+      "back": {
+        "reading": "たべる",
+        "meaning": "to eat",
+        "part_of_speech": "verb",
+        "jlpt_level": "N5",
+        "occurrence_count": 8
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=12s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=45s",
+        "https://www.youtube.com/watch?v=sample12345&t=89s",
+        "https://www.youtube.com/watch?v=sample12345&t=134s",
+        "https://www.youtube.com/watch?v=sample12345&t=178s",
+        "https://www.youtube.com/watch?v=sample12345&t=201s",
+        "https://www.youtube.com/watch?v=sample12345&t=256s",
+        "https://www.youtube.com/watch?v=sample12345&t=312s"
+      ],
+      "context_snippet": "朝ごはんを食べる時間です。"
+    },
+    {
+      "id": "card-002",
+      "front": "考える",
+      "back": {
+        "reading": "かんがえる",
+        "meaning": "to think",
+        "part_of_speech": "verb",
+        "jlpt_level": "N4",
+        "occurrence_count": 7
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=23s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=67s",
+        "https://www.youtube.com/watch?v=sample12345&t=112s",
+        "https://www.youtube.com/watch?v=sample12345&t=156s",
+        "https://www.youtube.com/watch?v=sample12345&t=210s",
+        "https://www.youtube.com/watch?v=sample12345&t=278s",
+        "https://www.youtube.com/watch?v=sample12345&t=345s"
+      ],
+      "context_snippet": "それについて考える必要があります。"
+    },
+    {
+      "id": "card-003",
+      "front": "行く",
+      "back": {
+        "reading": "いく",
+        "meaning": "to go",
+        "part_of_speech": "verb",
+        "jlpt_level": "N5",
+        "occurrence_count": 6
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=5s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=78s",
+        "https://www.youtube.com/watch?v=sample12345&t=145s",
+        "https://www.youtube.com/watch?v=sample12345&t=189s",
+        "https://www.youtube.com/watch?v=sample12345&t=267s",
+        "https://www.youtube.com/watch?v=sample12345&t=330s"
+      ],
+      "context_snippet": "明日東京に行く予定です。"
+    },
+    {
+      "id": "card-004",
+      "front": "経験",
+      "back": {
+        "reading": "けいけん",
+        "meaning": "experience",
+        "part_of_speech": "noun",
+        "jlpt_level": "N3",
+        "occurrence_count": 6
+      },
+      "jlpt_level": "N3",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=34s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=112s",
+        "https://www.youtube.com/watch?v=sample12345&t=189s",
+        "https://www.youtube.com/watch?v=sample12345&t=245s",
+        "https://www.youtube.com/watch?v=sample12345&t=301s",
+        "https://www.youtube.com/watch?v=sample12345&t=367s"
+      ],
+      "context_snippet": "日本での経験はとても貴重でした。"
+    },
+    {
+      "id": "card-005",
+      "front": "大きい",
+      "back": {
+        "reading": "おおきい",
+        "meaning": "big, large",
+        "part_of_speech": "adjective",
+        "jlpt_level": "N5",
+        "occurrence_count": 5
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=41s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=98s",
+        "https://www.youtube.com/watch?v=sample12345&t=156s",
+        "https://www.youtube.com/watch?v=sample12345&t=222s",
+        "https://www.youtube.com/watch?v=sample12345&t=298s"
+      ],
+      "context_snippet": "とても大きい公園ですね。"
+    },
+    {
+      "id": "card-006",
+      "front": "仕事",
+      "back": {
+        "reading": "しごと",
+        "meaning": "work, job",
+        "part_of_speech": "noun",
+        "jlpt_level": "N4",
+        "occurrence_count": 5
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=56s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=130s",
+        "https://www.youtube.com/watch?v=sample12345&t=198s",
+        "https://www.youtube.com/watch?v=sample12345&t=245s",
+        "https://www.youtube.com/watch?v=sample12345&t=320s"
+      ],
+      "context_snippet": "新しい仕事を見つけました。"
+    },
+    {
+      "id": "card-007",
+      "front": "発見",
+      "back": {
+        "reading": "はっけん",
+        "meaning": "discovery",
+        "part_of_speech": "noun",
+        "jlpt_level": "N3",
+        "occurrence_count": 5
+      },
+      "jlpt_level": "N3",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=62s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=140s",
+        "https://www.youtube.com/watch?v=sample12345&t=173s",
+        "https://www.youtube.com/watch?v=sample12345&t=234s",
+        "https://www.youtube.com/watch?v=sample12345&t=356s"
+      ],
+      "context_snippet": "面白い発見がありました。"
+    },
+    {
+      "id": "card-008",
+      "front": "私",
+      "back": {
+        "reading": "わたし",
+        "meaning": "I, me",
+        "part_of_speech": "noun",
+        "jlpt_level": "N5",
+        "occurrence_count": 4
+      },
+      "jlpt_level": "N5",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=3s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=52s",
+        "https://www.youtube.com/watch?v=sample12345&t=178s",
+        "https://www.youtube.com/watch?v=sample12345&t=230s"
+      ],
+      "context_snippet": "私は日本語を勉強しています。"
+    },
+    {
+      "id": "card-009",
+      "front": "便利",
+      "back": {
+        "reading": "べんり",
+        "meaning": "convenient",
+        "part_of_speech": "adjective",
+        "jlpt_level": "N4",
+        "occurrence_count": 4
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=71s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=160s",
+        "https://www.youtube.com/watch?v=sample12345&t=218s",
+        "https://www.youtube.com/watch?v=sample12345&t=289s"
+      ],
+      "context_snippet": "このアプリはとても便利です。"
+    },
+    {
+      "id": "card-010",
+      "front": "連絡",
+      "back": {
+        "reading": "れんらく",
+        "meaning": "contact",
+        "part_of_speech": "noun",
+        "jlpt_level": "N4",
+        "occurrence_count": 4
+      },
+      "jlpt_level": "N4",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=84s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=196s",
+        "https://www.youtube.com/watch?v=sample12345&t=260s",
+        "https://www.youtube.com/watch?v=sample12345&t=340s"
+      ],
+      "context_snippet": "後で連絡してください。"
+    },
+    {
+      "id": "card-011",
+      "front": "感動",
+      "back": {
+        "reading": "かんどう",
+        "meaning": "deeply moving, emotional",
+        "part_of_speech": "noun",
+        "jlpt_level": "N3",
+        "occurrence_count": 4
+      },
+      "jlpt_level": "N3",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=95s",
+      "secondary_links": [
+        "https://www.youtube.com/watch?v=sample12345&t=215s",
+        "https://www.youtube.com/watch?v=sample12345&t=272s",
+        "https://www.youtube.com/watch?v=sample12345&t=348s"
+      ],
+      "context_snippet": "その映画に感動しました。"
+    },
+    {
+      "id": "card-012",
+      "front": "挑戦",
+      "back": {
+        "reading": "ちょうせん",
+        "meaning": "challenge",
+        "part_of_speech": "noun",
+        "jlpt_level": "N3",
+        "occurrence_count": 1
+      },
+      "jlpt_level": "N3",
+      "youtube_link": "https://www.youtube.com/watch?v=sample12345&t=108s",
+      "secondary_links": [],
+      "context_snippet": "新しい挑戦を始めましょう。"
+    }
+  ]
+}

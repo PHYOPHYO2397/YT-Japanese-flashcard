@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip Card Component — Demo</title>
+    <link rel="stylesheet" href="flashcards.css" />
+    <style>
+      /* ============================================
+         Demo-only styles — card styles are in flashcards.css
+         ============================================ */
+
+      body {
+        padding: 2rem;
+        display: block;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #f0f0f0;
+        margin-bottom: 0.25rem;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #888;
+        font-size: 0.85rem;
+        margin-bottom: 2.5rem;
+      }
+
+      /* ── Grid Layout ─────────────────────────── */
+      .demo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .demo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .demo-label {
+        font-size: 0.8rem;
+        color: #888;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .demo-label strong {
+        color: #ccc;
+      }
+
+      /* ── Card sizing for demo ────────────────── */
+      .demo-card-wrap {
+        position: relative;
+        width: 320px;
+        height: 400px;
+      }
+
+      .demo-card-wrap.small {
+        height: 280px;
+        width: 280px;
+      }
+
+      .demo-card-wrap .flip-card-inner {
+        height: 100%;
+      }
+
+      .demo-card-wrap .flip-card-face {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+      }
+
+      /* ── Image front face ────────────────────── */
+      .flip-card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 14px;
+      }
+
+      .flip-card-front .front-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        color: #fff;
+        padding: 1.5rem 1rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .flip-card-front .front-word {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 2.8rem;
+        color: #fff;
+        text-align: center;
+        position: relative;
+      }
+
+      .flip-card-front .front-word .tap-hint {
+        font-size: 0.65rem;
+        color: #555;
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+
+      /* ── Back face overrides for demo ────────── */
+      .flip-card-back h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .flip-card-back h4 {
+        font-size: 1rem;
+        opacity: 0.8;
+        margin-bottom: 0.75rem;
+      }
+
+      .flip-card-back .detail-row {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .flip-card-back .detail-row .label {
+        opacity: 0.6;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 0.05em;
+      }
+
+      /* ── Color themes for backs ──────────────── */
+      .back-rose    { background: linear-gradient(145deg, #9f1239, #be123c) !important; color: #fff; border: none; }
+      .back-emerald { background: linear-gradient(145deg, #047857, #059669) !important; color: #fff; border: none; }
+      .back-violet  { background: linear-gradient(145deg, #6b21a8, #7c3aed) !important; color: #fff; border: none; }
+      .back-amber   { background: linear-gradient(145deg, #b45309, #d97706) !important; color: #fff; border: none; }
+
+      /* ── Demo nav ────────────────────────────── */
+      .demo-nav-wrap {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        justify-content: center;
+      }
+
+      .demo-nav-btn {
+        padding: 0.5rem 1.2rem;
+        border: 1px solid #444;
+        border-radius: 6px;
+        background: #252540;
+        color: #ccc;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-family: inherit;
+        transition: background 0.15s;
+      }
+
+      .demo-nav-btn:hover { background: #333360; }
+      .demo-nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+      /* ── Legend ──────────────────────────────── */
+      .legend {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 0.75rem;
+        color: #555;
+      }
+
+      .legend span {
+        margin: 0 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flip Card Component</h1>
+    <p class="subtitle">3D flip-card variants — click or hover to flip</p>
+
+    <!-- ── Demo Grid ─────────────────────────────── -->
+    <div class="demo-grid">
+
+      <!-- 1. Click-to-flip Horizontal (Image Card) -->
+      <div class="demo-section">
+        <div class="demo-label"><strong>Click</strong> · Horizontal · Image</div>
+        <div class="demo-card-wrap" id="card1">
+          <div class="flip-card-inner" role="button" tabindex="0" aria-pressed="false"
+               aria-label="Nike Air Jordan product card">
+            <div class="flip-card-face flip-card-front">
+              <img
+                src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2340&auto=format&fit=crop"
+                alt="Nike Air Jordan sneakers"
+              />
+              <div class="front-label">Nike Air Jordan</div>
+            </div>
+            <div class="flip-card-face flip-card-back back-rose">
+              <h2>Nike Air Jordan</h2>
+              <h4>€ 1,299.00</h4>
+              <button style="
+                background: rgba(255,255,255,0.2);
+                border: 1px solid rgba(255,255,255,0.3);
+                color: #fff;
+                padding: 0.5rem 1.5rem;
+                border-radius: 9999px;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: 0.9rem;
+              ">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Click-to-flip Vertical (Image Card) -->
+      <div class="demo-section">
+        <div class="demo-label"><strong>Click</strong> · Vertical · Image</div>
+        <div class="demo-card-wrap" id="card2">
+          <div class="flip-card-inner flip-vertical" role="button" tabindex="0"
+               aria-pressed="false" aria-label="Nike Air Jordan vertical flip card">
+            <div class="flip-card-face flip-card-front">
+              <img
+                src="https://images.unsplash.com/photo-1617814121568-9b184eaabf08?q=80&w=2264&auto=format&fit=crop"
+                alt="Nike sneakers on orange background"
+              />
+              <div class="front-label">Nike Air Jordan</div>
+            </div>
+            <div class="flip-card-face flip-card-back back-emerald">
+              <h2>Nike Air Jordan</h2>
+              <h4>€ 1,299.00</h4>
+              <button style="
+                background: rgba(255,255,255,0.2);
+                border: 1px solid rgba(255,255,255,0.3);
+                color: #fff;
+                padding: 0.5rem 1.5rem;
+                border-radius: 9999px;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: 0.9rem;
+              ">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Hover-to-flip Horizontal (Image Card) -->
+      <div class="demo-section">
+        <div class="demo-label"><strong>Hover</strong> · Horizontal · Image</div>
+        <div class="demo-card-wrap" id="card3">
+          <div class="flip-card-inner flip-hover" role="button" tabindex="0"
+               aria-pressed="false" aria-label="Product card — hover to see details">
+            <div class="flip-card-face flip-card-front">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2340&auto=format&fit=crop"
+                alt="Red Nike shoe"
+              />
+              <div class="front-label">Nike Red</div>
+            </div>
+            <div class="flip-card-face flip-card-back back-violet">
+              <h2>Nike Air Max</h2>
+              <h4>€ 899.00</h4>
+              <button style="
+                background: rgba(255,255,255,0.2);
+                border: 1px solid rgba(255,255,255,0.3);
+                color: #fff;
+                padding: 0.5rem 1.5rem;
+                border-radius: 9999px;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: 0.9rem;
+              ">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Hover-to-flip Vertical (Image Card) -->
+      <div class="demo-section">
+        <div class="demo-label"><strong>Hover</strong> · Vertical · Image</div>
+        <div class="demo-card-wrap" id="card4">
+          <div class="flip-card-inner flip-hover flip-vertical" role="button" tabindex="0"
+               aria-pressed="false" aria-label="Product card — vertical hover flip">
+            <div class="flip-card-face flip-card-front">
+              <img
+                src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=2264&auto=format&fit=crop"
+                alt="Yellow Nike shoe"
+              />
+              <div class="front-label">Nike Air Force 1</div>
+            </div>
+            <div class="flip-card-face flip-card-back back-amber">
+              <h2>Nike Air Force 1</h2>
+              <h4>€ 1,099.00</h4>
+              <button style="
+                background: rgba(255,255,255,0.2);
+                border: 1px solid rgba(255,255,255,0.3);
+                color: #fff;
+                padding: 0.5rem 1.5rem;
+                border-radius: 9999px;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: 0.9rem;
+              ">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Japanese Vocab Card (Click · Horizontal) — actual app use case -->
+      <div class="demo-section">
+        <div class="demo-label"><strong>Click</strong> · Horizontal · Japanese Vocab</div>
+        <div class="demo-card-wrap small" id="card5">
+          <div class="flip-card-inner" role="button" tabindex="0" aria-pressed="false"
+               aria-label="Japanese vocabulary card: 食べる">
+            <div class="flip-card-face flip-card-front">
+              <div class="front-word">
+                食べる
+                <span class="tap-hint">click to reveal</span>
+              </div>
+            </div>
+            <div class="flip-card-face flip-card-back" style="align-items: flex-start; text-align: left;">
+              <div class="detail-row">
+                <span class="label">Reading</span>
+                <span class="value word-jp">たべる</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Meaning</span>
+                <span class="value">to eat</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Part of Speech</span>
+                <span class="value">Verb (ru-verb)</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">JLPT Level</span>
+                <span class="value"><span class="jlpt-badge n5">N5</span></span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Occurrences</span>
+                <span class="value">12</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Disabled (non-interactive) -->
+      <div class="demo-section">
+        <div class="demo-label"><strong>Disabled</strong> · Horizontal · Non-interactive</div>
+        <div class="demo-card-wrap small" id="card6">
+          <div class="flip-card-inner flip-disabled" role="button" tabindex="-1"
+               aria-pressed="false" aria-disabled="true"
+               aria-label="Disabled card — 猫">
+            <div class="flip-card-face flip-card-front">
+              <div class="front-word">
+                猫
+                <span class="tap-hint">disabled</span>
+              </div>
+            </div>
+            <div class="flip-card-face flip-card-back" style="align-items: flex-start; text-align: left;">
+              <div class="detail-row">
+                <span class="label">Reading</span>
+                <span class="value word-jp">ねこ</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Meaning</span>
+                <span class="value">cat</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">JLPT Level</span>
+                <span class="value"><span class="jlpt-badge n5">N5</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="legend">
+      <span>🖱 Click-to-flip (default)</span>
+      <span>🔄 Hover-to-flip</span>
+      <span>↕ Vertical direction</span>
+      <span>🚫 Disabled</span>
+      <span>⌨ Keyboard: Space/Enter to flip, arrows to navigate</span>
+    </div>
+
+    <script>
+      /* ── Flip Card Behavior ──────────────────── */
+      document.querySelectorAll('.flip-card-inner').forEach(function (card) {
+        card.addEventListener('click', function () {
+          if (this.classList.contains('flip-disabled')) return;
+          this.classList.toggle('flipped');
+          this.setAttribute('aria-pressed',
+            String(this.classList.contains('flipped')));
+        });
+
+        card.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

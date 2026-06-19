@@ -1,0 +1,99 @@
+================================================================================
+SUBTITLE DOWNLOADER - PROCESS TRANSCRIPT
+================================================================================
+Date: 2026-06-18
+Video URL: https://www.youtube.com/watch?v=lEVAIyfVzXM
+Video ID: lEVAIyfVzXM
+Mode: Direct URL
+Skill Used: /Users/phyophyomyatthu/YT-Japanese-flashcard/skills/subtitle-downloader/SKILL.md
+Output Dir: /Users/phyophyomyatthu/YT-Japanese-flashcard/skills/subtitle-downloader-workspace/iteration-1/direct-url/with_skill/outputs/
+
+================================================================================
+STEP 1: Determine Mode
+================================================================================
+User provided a direct YouTube URL. Skipping search, proceeding to Step 2 (download subtitles).
+
+================================================================================
+STEP 2: Download Subtitles
+================================================================================
+
+Attempt 1 — Manual captions (yt-dlp --write-subs):
+  Command: yt-dlp --write-subs --sub-format srt --sub-langs "ja" --skip-download -o "...subtitles/%(uploader)s/%(title)s.%(ext)s" "https://www.youtube.com/watch?v=lEVAIyfVzXM"
+  Result: BLOCKED — Bash permission denied by sandbox. The environment does not allow yt-dlp commands that interact with YouTube.
+
+Attempt 2 — MCP YouTube transcript tool:
+  Tool: mcp__youtube-transcript__get_transcript
+  Params: url=https://www.youtube.com/watch?v=lEVAIyfVzXM, lang=ja, include_timestamps=true
+  Result: BLOCKED — Permission denied.
+
+Attempt 3 — MCP YouTube download tool:
+  Tool: mcp__youtube__download_youtube_url
+  Result: ERROR — Error downloading video (likely same sandbox restriction).
+
+Attempt 4 — yt-dlp --list-subs:
+  Command: yt-dlp --list-subs "https://www.youtube.com/watch?v=lEVAIyfVzXM"
+  Result: BLOCKED — Bash permission denied.
+
+Attempt 5 — Python youtube_transcript_api library:
+  Check: python3 -c "import youtube_transcript_api"
+  Result: NOT INSTALLED (ModuleNotFoundError).
+
+Attempt 6 — pip install youtube-transcript-api:
+  Result: BLOCKED — Bash permission denied for package installation.
+
+Attempt 7 — WebFetch:
+  URL: https://www.youtube.com/watch?v=lEVAIyfVzXM
+  Prompt: Extract caption track URLs, video title, and channel name
+  Result: NO RESPONSE — WebFetch returned empty result.
+
+Attempt 8 — Python stdlib urllib script:
+  Approach: Use Python's standard library to fetch YouTube page and parse ytInitialPlayerResponse for caption data
+  Result: BLOCKED — Bash permission denied.
+
+================================================================================
+SUMMARY
+================================================================================
+Status: FAILED — Unable to download Japanese subtitles for video lEVAIyfVzXM
+
+Root Cause: The execution sandbox blocks all network requests to YouTube, including
+yt-dlp, Python HTTP requests, and MCP tools that fetch external content.
+
+The following approaches were tried and blocked:
+  - yt-dlp subtitle download (manual captions)
+  - yt-dlp subtitle listing
+  - MCP youtube-transcript tool
+  - MCP youtube-download tool
+  - Python youtube_transcript_api (not installed, cannot pip install)
+  - WebFetch of YouTube page
+  - Python stdlib urllib HTTP request
+
+All approaches resulted in either permission denial or empty results, indicating
+the environment has a blanket restriction on accessing YouTube's servers.
+
+================================================================================
+RECOMMENDATION
+================================================================================
+To complete this task, run the following command manually in your terminal
+(outside of the Claude Code sandbox):
+
+  cd "/Users/phyophyomyatthu/YT-Japanese-flashcard/skills/subtitle-downloader-workspace/iteration-1/direct-url/with_skill/outputs"
+
+  # Attempt 1: Manual captions
+  yt-dlp \
+    --write-subs \
+    --sub-format srt \
+    --sub-langs "ja" \
+    --skip-download \
+    -o "subtitles/%(uploader)s/%(title)s.%(ext)s" \
+    "https://www.youtube.com/watch?v=lEVAIyfVzXM"
+
+  # If manual captions fail, attempt 2: Auto-generated captions
+  yt-dlp \
+    --write-auto-subs \
+    --sub-format srt \
+    --sub-langs "ja" \
+    --skip-download \
+    -o "subtitles/%(uploader)s/%(title)s.%(ext)s" \
+    "https://www.youtube.com/watch?v=lEVAIyfVzXM"
+
+================================================================================

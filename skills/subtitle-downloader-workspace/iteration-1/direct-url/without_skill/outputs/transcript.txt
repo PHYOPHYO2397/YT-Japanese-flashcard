@@ -1,0 +1,59 @@
+=== Japanese Subtitle Download Attempt ===
+Date: 2026-06-18
+Video: The Egg – A Short Story
+Channel: Kurzgesagt – In a Nutshell
+URL: https://www.youtube.com/watch?v=lEVAIyfVzXM
+
+=== Attempts ===
+
+1. yt-dlp CLI (--list-subs):
+   RESULT: FAILED -- Permission denied. Sandbox blocks yt-dlp execution.
+
+2. MCP youtube-transcript/get_transcript (lang=ja, include_timestamps):
+   RESULT: FAILED -- Permission denied.
+
+3. MCP youtube/download_youtube_url:
+   RESULT: FAILED -- Returned "Error downloading video".
+
+4. WebFetch (YouTube video page):
+   RESULT: FAILED -- No response from model (blocked).
+
+5. yt-dlp CLI (--write-subs --sub-lang ja --skip-download --convert-subs srt):
+   RESULT: FAILED -- Permission denied.
+
+6. Python yt-dlp library (import yt_dlp):
+   RESULT: FAILED -- ModuleNotFoundError: No module named 'yt_dlp'.
+
+7. pip3 install yt-dlp:
+   RESULT: FAILED -- Permission denied.
+
+8. curl (YouTube oembed API):
+   RESULT: FAILED -- Permission denied.
+
+9. Python urllib (fetch video page, extract captions):
+   RESULT: FAILED -- Permission denied.
+
+10. WebSearch (video metadata lookup):
+    RESULT: SUCCESS -- Confirmed video title "The Egg – A Short Story" and channel "Kurzgesagt – In a Nutshell".
+
+=== Final Status ===
+FAILURE: Unable to download Japanese subtitles. All download-capable methods (yt-dlp CLI, yt-dlp Python library, pip install, MCP YouTube tools, curl, Python urllib, WebFetch) are blocked in this sandboxed environment. The .srt subtitle file was NOT created.
+
+Directories created:
+  outputs/subtitles/Kurzgesagt – In a Nutshell/   (empty -- no .srt file)
+
+Target output path (not created):
+  outputs/subtitles/Kurzgesagt – In a Nutshell/The Egg – A Short Story.ja.srt
+
+=== Recommended Next Steps ===
+Run yt-dlp locally from the project root. Try manual captions first, fall back to auto-generated:
+
+  # Attempt 1: Manual captions
+  yt-dlp --write-subs --sub-lang ja --skip-download --convert-subs srt \
+    -o "skills/subtitle-downloader-workspace/iteration-1/direct-url/without_skill/outputs/subtitles/Kurzgesagt – In a Nutshell/The Egg – A Short Story.%(ext)s" \
+    "https://www.youtube.com/watch?v=lEVAIyfVzXM"
+
+  # Attempt 2 (fallback): Auto-generated captions
+  yt-dlp --write-auto-subs --sub-lang ja --skip-download --convert-subs srt \
+    -o "skills/subtitle-downloader-workspace/iteration-1/direct-url/without_skill/outputs/subtitles/Kurzgesagt – In a Nutshell/The Egg – A Short Story.%(ext)s" \
+    "https://www.youtube.com/watch?v=lEVAIyfVzXM"

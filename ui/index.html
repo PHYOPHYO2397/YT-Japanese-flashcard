@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japanese Flashcards</title>
+    <link rel="stylesheet" href="flashcards.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header-title">Japanese Flashcard Study</h1>
+      <p class="video-title" id="videoTitle"></p>
+    </header>
+
+    <!-- JLPT Breakdown -->
+    <div class="breakdown" id="breakdown"></div>
+
+    <!-- Filter & Sort -->
+    <div class="controls">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn level-n5" data-filter="N5">N5</button>
+      <button class="filter-btn level-n4" data-filter="N4">N4</button>
+      <button class="filter-btn level-n3" data-filter="N3">N3</button>
+      <select class="sort-select" id="sortSelect">
+        <option value="frequency">Most Frequent</option>
+        <option value="jlpt-asc">JLPT: N5 → N3</option>
+        <option value="jlpt-desc">JLPT: N3 → N5</option>
+      </select>
+    </div>
+
+    <!-- Main Card Area -->
+    <div class="card-stage" id="cardStage">
+      <!-- Left Arrow -->
+      <button class="arrow-btn arrow-left" id="prevBtn" aria-label="Previous card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <!-- Card -->
+      <div class="card-container" id="cardContainer">
+        <div class="flip-card" id="flipCard" role="button" tabindex="0" aria-pressed="false" aria-label="Flashcard — click or press Space to flip">
+          <div class="tilt-layer" id="tiltLayer">
+            <!-- FRONT — Japanese word -->
+            <div class="card-face card-front">
+              <span class="card-word" id="cardWord"></span>
+              <span class="card-hint" id="cardHint">click or space to reveal</span>
+            </div>
+            <!-- BACK — details -->
+            <div class="card-face card-back">
+              <div class="back-reading" id="backReading"></div>
+              <div class="back-divider"></div>
+              <div class="back-meaning" id="backMeaning"></div>
+              <div class="back-meta">
+                <span class="back-pos" id="backPos"></span>
+                <span class="jlpt-badge" id="backJlpt"></span>
+                <span class="back-count" id="backCount"></span>
+              </div>
+              <a class="back-yt" id="backYt" href="#" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Watch on YouTube
+              </a>
+              <div class="back-secondary" id="backSec"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="arrow-btn arrow-right" id="nextBtn" aria-label="Next card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <!-- Pagination & Progress -->
+    <div class="pagination" id="pagination"></div>
+    <div class="progress" id="progress">0 of 0 reviewed</div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState" style="display:none">
+      <h2>No Flashcards</h2>
+      <p>No vocabulary was found in this transcript. Try a different video.</p>
+    </div>
+
+    <!-- Error State -->
+    <div class="error-state" id="errorState" style="display:none">
+      <h2>Something went wrong</h2>
+      <p id="errorMsg"></p>
+    </div>
+
+    <!-- Data -->
+    <script id="deckData" type="application/json" src="sample-data/flashcards-ltflhuS4Zr4.json"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash *)",
+      "mcp__youtube__download_youtube_url",
+      "WebFetch(domain:www.youtube.com)",
+      "Bash(claude mcp *)",
+      "Bash(npm install *)",
+      "Bash(node /tmp/mcp-server-youtube-transcript/dist/index.js)",
+      "Bash(timeout 5 node /tmp/mcp-server-youtube-transcript/dist/index.js)",
+      "Bash(node *)",
+      "WebFetch(domain:m.youtube.com)",
+      "WebSearch",
+      "Bash(python3 -m http.server 8899 --bind 127.0.0.1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8899/ui/index.html)",
+      "Bash(curl -s http://127.0.0.1:8899/ui/index.html)",
+      "Bash(curl -s http://127.0.0.1:8899/ui/sample-data/live-test.json)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f'JSON served: {d[\\\\\"meta\\\\\"][\\\\\"total_cards\\\\\"]} cards, {d[\\\\\"meta\\\\\"][\\\\\"video_title\\\\\"]}'\\)\")",
+      "Bash(lsof -ti:8899)",
+      "Bash(curl -s http://127.0.0.1:8899/)",
+      "Bash(kill 94402)",
+      "Bash(python3 -m http.server 8900 --bind 127.0.0.1)",
+      "Bash(curl -s http://127.0.0.1:8900/ui/sample-data/live-test.json)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(git clone *)",
+      "Bash(yt-dlp --version)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:www.bing.com)",
+      "mcp__youtube-transcript__get_transcript",
+      "Bash(./yt-ja *)",
+      "Bash(yt-dlp --flat-playlist --dump-single-json \"ytsearch5:JLPT N5 vocabulary complete Japanese\")",
+      "Bash(yt-dlp --flat-playlist --dump-single-json \"ytsearch5:N5 語彙 完全 日本語\")",
+      "Bash(yt-dlp --flat-playlist --dump-single-json \"ytsearch10:N5 vocabulary Japanese complete all words\")",
+      "Bash(open *)",
+      "Bash(grep -oP \"\\\\$\\\\\\('\\\\K[^']+\" ui/app.js)"
+    ]
+  }
+}
