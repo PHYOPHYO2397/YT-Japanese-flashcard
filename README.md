@@ -11,6 +11,7 @@ No login. No backend. No setup friction.
 Japanese learners who use YouTube for immersion but struggle to turn content into study material.
 
 They typically:
+
 - Pause videos constantly to look up unknown words
 - Manually write vocabulary lists
 - Search meanings and readings one by one
@@ -34,6 +35,15 @@ Everything is exported as `FlashcardDeck JSON`.
 
 ---
 
+## Demo Screenshots
+
+- **Resolution used:** 1280×800 desktop
+
+![Landing Page](screenshots/01.png)
+![How It Work](screenshots/02.png)
+![Try It](screenshots/03.png)
+![Flashcard](screenshots/04.png)
+
 ## ⚙️ Two pipelines
 
 ### 1. Batch pipeline (primary workflow)
@@ -41,9 +51,11 @@ Everything is exported as `FlashcardDeck JSON`.
 Designed for processing multiple videos at once from a search query.
 
 Example:
+
 > “download top 3 N4 listening videos”
 
 Flow:
+
 - YouTube search + download via `yt-dlp`
 - `.ja.srt` subtitle extraction
 - Python processing pipeline:
@@ -54,6 +66,7 @@ Flow:
 - Output: structured flashcard decks
 
 Best for:
+
 - Bulk study sessions
 - JLPT practice sets
 - Building multiple decks quickly
@@ -65,6 +78,7 @@ Best for:
 Designed for converting a specific video into a deck.
 
 Flow:
+
 - Paste YouTube URL
 - MCP tools:
   - `youtube-transcript`
@@ -79,6 +93,7 @@ Flow:
   - Deck generation
 
 Best for:
+
 - Targeted study from a specific video
 - Teacher-recommended content
 - Deep dive learning
@@ -88,6 +103,7 @@ Best for:
 ## 🖥️ UI system
 
 ### Flashcard viewer
+
 - Warm dark theme
 - 3D flip animations
 - Keyboard navigation
@@ -96,7 +112,9 @@ Best for:
 - Progress tracking
 
 ### Landing page
+
 Built using **Magic MCP (21st.dev)**:
+
 - Hero section
 - Pipeline visualization
 - Feature grid
@@ -107,6 +125,7 @@ Built using **Magic MCP (21st.dev)**:
 ## 🏗️ Architecture overview
 
 ### Batch pipeline
+
 - Skill: `subtitle-downloader`
 - Tools: `yt-dlp`, subtitle processing
 - Python modules:
@@ -118,6 +137,7 @@ Built using **Magic MCP (21st.dev)**:
 ---
 
 ### Single-URL pipeline
+
 - MCP config (`.mcp.json`)
   - `youtube-transcript`
   - `youtube`
@@ -128,6 +148,7 @@ Built using **Magic MCP (21st.dev)**:
 ---
 
 ### UI layer
+
 - Magic MCP (21st.dev) for landing page
 - Custom frontend for flashcards
 - No authentication or backend required
@@ -139,12 +160,15 @@ Built using **Magic MCP (21st.dev)**:
 This system turns passive immersion into structured learning without manual effort.
 
 Instead of:
+
 - Watching → pausing → looking up words → forgetting context
 
 You get:
+
 - Watching → automatic extraction → JLPT-graded flashcards → review
 
 It keeps:
+
 - Readings
 - Meanings
 - JLPT levels
