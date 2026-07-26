@@ -50,7 +50,18 @@
       "mcp__context7__resolve-library-id",
       "mcp__context7__query-docs",
       "Bash(npm init *)",
-      "Bash(yt-dlp *)"
+      "Bash(yt-dlp *)",
+      "Bash(curl -s \"http://localhost:8080/api/generate?url=https://www.youtube.com/watch?v=uZFBHUUcyvk&t=9s\")",
+      "Bash(curl -s -w \"\\\\nHTTP_CODE: %{http_code}\" \"http://localhost:8080/api/generate\")",
+      "Bash(curl -s \"http://localhost:8080/\")",
+      "Bash(kill 51013)",
+      "Bash(curl -s -w \"\\\\nHTTP_CODE: %{http_code}\" \"http://localhost:8080/api/generate?url=https://www.youtube.com/watch?v=uZFBHUUcyvk&t=9s\")",
+      "Bash(kill 61510)",
+      "Bash(pkill -f \"python3 server.py\")",
+      "Bash(curl -s -w \"\\\\nHTTP: %{http_code}\" \"http://localhost:8080/api/generate?url=https://www.youtube.com/watch?v=uZFBHUUcyvk\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://yt-japanese-flashcard.vercel.app/api/generate?url=https://www.youtube.com/watch?v=xwdp4N8MLO4\")",
+      "Bash(curl *)",
+      "Bash(npx vercel *)"
     ]
   },
   "enabledMcpjsonServers": [
