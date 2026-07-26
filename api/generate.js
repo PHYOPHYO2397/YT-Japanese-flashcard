@@ -78,6 +78,77 @@ async function youtubeFetch(params) {
   return res;
 }
 
+/**
+ * Direct YouTube transcript fetch — scrapes video page for caption track URLs.
+ * Fallback when youtube-transcript-plus library fails on cloud IPs.
+ */
+async function fetchDirectTranscript(videoId) {
+  const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+
+  // Step 1: Fetch video page to extract caption track URLs
+  const pageRes = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
+    headers: { 'User-Agent': UA, 'Accept-Language': 'ja,en-US;q=0.9' },
+  });
+  const html = await pageRes.text();
+
+  // Find timedtext URLs
+  const matches = [...html.matchAll(/"baseUrl"\s*:\s*"([^"]*timedtext[^"]*)"/g)];
+  let jaUrl = null;
+
+  for (const m of matches) {
+    const url = m[1].replace(/\\u0026/g, '&');
+    if (url.includes('lang=ja') || url.includes('lang%3Dja')) {
+      jaUrl = url;
+      break;
+    }
+  }
+
+  // Try any Japanese variant
+  if (!jaUrl) {
+    for (const m of matches) {
+      const url = m[1].replace(/\\u0026/g, '&');
+      if (url.toLowerCase().includes('ja')) {
+        jaUrl = url;
+        break;
+      }
+    }
+  }
+
+  if (!jaUrl) return null;
+
+  // Step 2: Fetch the transcript XML
+  const transcriptRes = await fetch(jaUrl, {
+    headers: { 'User-Agent': UA },
+  });
+  const xml = await transcriptRes.text();
+
+  // Step 3: Parse XML transcript
+  const segments = [];
+  const textRe = /<text start="([\d.]+)" dur="([\d.]+)"[^>]*>(.*?)<\/text>/g;
+  let match;
+  while ((match = textRe.exec(xml)) !== null) {
+    const start = parseFloat(match[1]);
+    const dur = parseFloat(match[2]);
+    const text = match[3]
+      .replace(/<[^>]+>/g, '')
+      .trim()
+      .replace(/&amp;/g, '&')
+      .replace(/&#39;/g, "'")
+      .replace(/&quot;/g, '"');
+    if (text) {
+      segments.push({
+        text,
+        start_time: Math.round(start * 1000) / 1000,
+        end_time: Math.round((start + dur) * 1000) / 1000,
+        segment_index: segments.length,
+        source: 'auto_generated',
+      });
+    }
+  }
+
+  return segments.length ? segments : null;
+}
+
 async function fetchVideoTranscript(videoId) {
   // Attempt 1: youtube-transcript-plus with retries and browser-like headers
   try {
@@ -101,6 +172,8 @@ async function fetchVideoTranscript(videoId) {
 
     return { title: 'YouTube Video', segments };
   } catch (err) {
+    console.error('[fetchVideoTranscript] library error:', err.constructor.name, err.message);
+
     // Japanese not available — check if any captions exist at all
     if (err instanceof YoutubeTranscriptNotAvailableLanguageError) {
       try {
@@ -114,9 +187,8 @@ async function fetchVideoTranscript(videoId) {
           return { title: 'YouTube Video', segments: [], error: 'not_japanese' };
         }
       } catch { /* ignore */ }
-      return null;
     }
-    // TooManyRequests or other errors — retry once more after a delay
+    // TooManyRequests — retry once after a delay
     if (err instanceof YoutubeTranscriptTooManyRequestError) {
       await new Promise((r) => setTimeout(r, 3000));
       try {
@@ -126,19 +198,32 @@ async function fetchVideoTranscript(videoId) {
           playerFetch: youtubeFetch,
           transcriptFetch: youtubeFetch,
         });
-        if (!transcript || !transcript.length) return null;
-        const segments = transcript.map((item, i) => ({
-          text: item.text,
-          start_time: Math.round((item.offset / 1000) * 1000) / 1000,
-          end_time: Math.round(((item.offset + item.duration) / 1000) * 1000) / 1000,
-          segment_index: i,
-          source: 'auto_generated',
-        }));
-        return { title: 'YouTube Video', segments };
-      } catch { /* fall through to null */ }
+        if (transcript && transcript.length) {
+          const segments = transcript.map((item, i) => ({
+            text: item.text,
+            start_time: Math.round((item.offset / 1000) * 1000) / 1000,
+            end_time: Math.round(((item.offset + item.duration) / 1000) * 1000) / 1000,
+            segment_index: i,
+            source: 'auto_generated',
+          }));
+          return { title: 'YouTube Video', segments };
+        }
+      } catch { /* fall through */ }
     }
-    return null;
   }
+
+  // Attempt 2: Direct YouTube API scraping (bypasses library, works on cloud IPs)
+  console.log('[fetchVideoTranscript] falling back to direct transcript fetch');
+  try {
+    const segments = await fetchDirectTranscript(videoId);
+    if (segments && segments.length) {
+      return { title: 'YouTube Video', segments };
+    }
+  } catch (err) {
+    console.error('[fetchVideoTranscript] direct fetch error:', err.message);
+  }
+
+  return null;
 }
 
 // ── Vocabulary extraction ────────────────────────────────────────────────────
