@@ -3,8 +3,10 @@
  *
  * Pipeline:
  *  1. Fetch YouTube transcript via youtube-transcript-plus (handles PO tokens)
- *  2. Extract vocabulary (compound words)
- *  3. Build flashcard deck JSON
+ *  2. Fallback: Direct YouTube page scraping
+ *  3. Fallback: Supadata API (bypasses YouTube IP blocking on cloud)
+ *  4. Extract vocabulary (compound words)
+ *  5. Build flashcard deck JSON
  */
 
 const {
@@ -221,6 +223,37 @@ async function fetchVideoTranscript(videoId) {
     }
   } catch (err) {
     console.error('[fetchVideoTranscript] direct fetch error:', err.message);
+  }
+
+  // Attempt 3: Supadata API (bypasses YouTube IP blocking on cloud)
+  const supadataKey = process.env.SUPADATA_API_KEY;
+  if (supadataKey) {
+    console.log('[fetchVideoTranscript] falling back to Supadata API');
+    try {
+      const saRes = await fetch(
+        `https://api.supadata.ai/v1/youtube/transcript?url=https://www.youtube.com/watch?v=${videoId}&lang=ja`,
+        { headers: { 'x-api-key': supadataKey } }
+      );
+      if (saRes.ok) {
+        const saData = await saRes.json();
+        if (saData && saData.transcript && saData.transcript.length) {
+          const segments = saData.transcript.map((item, i) => ({
+            text: item.text || item.content || '',
+            start_time: Math.round((item.start || item.offset || 0) * 1000) / 1000,
+            end_time: Math.round(((item.end || item.offset || 0) + (item.duration || 0)) * 1000) / 1000,
+            segment_index: i,
+            source: 'auto_generated',
+          })).filter(s => s.text);
+          if (segments.length) {
+            return { title: 'YouTube Video', segments };
+          }
+        }
+      } else {
+        console.error('[fetchVideoTranscript] Supadata error:', saRes.status, await saRes.text());
+      }
+    } catch (err) {
+      console.error('[fetchVideoTranscript] Supadata error:', err.message);
+    }
   }
 
   return null;
