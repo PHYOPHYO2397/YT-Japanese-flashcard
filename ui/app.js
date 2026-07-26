@@ -397,47 +397,31 @@
     ytBtn.textContent = 'Generating...';
     hideMessages();
 
-    // Try server API first, fall back to static file
+    // Call the serverless API to generate flashcards
     var apiBase = window.location.origin;
-    var apiXhr = new XMLHttpRequest();
-    apiXhr.open('GET', apiBase + '/api/generate?url=' + encodeURIComponent(url), true);
-    apiXhr.onload = function () {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', apiBase + '/api/generate?url=' + encodeURIComponent(url), true);
+    xhr.onload = function () {
       ytBtn.disabled = false;
       ytBtn.textContent = 'Generate';
-      if (apiXhr.status === 200) {
+      if (xhr.status === 200) {
         try {
-          init(JSON.parse(apiXhr.responseText));
+          init(JSON.parse(xhr.responseText));
         } catch (e) {
           showError('Could not parse flashcard data.');
         }
       } else {
         var resp;
-        try { resp = JSON.parse(apiXhr.responseText); } catch(e) {}
-        showError((resp && resp.error) || 'Pipeline failed. Check the server console.');
+        try { resp = JSON.parse(xhr.responseText); } catch (e) {}
+        showError((resp && resp.error) || 'Pipeline failed. Please try again.');
       }
     };
-    apiXhr.onerror = function () {
-      // No server running — try static file fallback
-      var fallback = new XMLHttpRequest();
-      fallback.open('GET', 'output/flashcards-' + videoId + '.json', true);
-      fallback.onload = function () {
-        ytBtn.disabled = false;
-        ytBtn.textContent = 'Generate';
-        if (fallback.status === 200 || fallback.status === 0) {
-          try { init(JSON.parse(fallback.responseText)); }
-          catch (e) { showError('Could not parse flashcard data.'); }
-        } else {
-          showError('No flashcards found. Run: python3 server.py');
-        }
-      };
-      fallback.onerror = function () {
-        ytBtn.disabled = false;
-        ytBtn.textContent = 'Generate';
-        showError('Could not connect. Run: python3 server.py');
-      };
-      fallback.send();
+    xhr.onerror = function () {
+      ytBtn.disabled = false;
+      ytBtn.textContent = 'Generate';
+      showError('Could not connect to the server. Please try again later.');
     };
-    apiXhr.send();
+    xhr.send();
   }
 
   ytBtn.addEventListener('click', loadFromYouTube);
