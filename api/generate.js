@@ -1,20 +1,13 @@
 /**
  * Vercel Serverless Function — /api/generate?url=<youtube_url>
  *
- * Reimplements the Python server.py pipeline in Node.js:
- *  1. Fetch YouTube transcript via timedtext API
+ * Pipeline:
+ *  1. Fetch YouTube transcript via youtube-transcript-plus (handles PO tokens)
  *  2. Extract vocabulary (compound words)
  *  3. Build flashcard deck JSON
  */
 
-const https = require('https');
-const http = require('http');
-
-const HEADERS = {
-  'User-Agent':
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-  'Accept-Language': 'ja,en;q=0.9',
-};
+const { fetchTranscript } = require('youtube-transcript-plus');
 
 const STOPWORDS = new Set(
   ('は が を に へ で と も か の や よ ね わ から まで より だけ しか '
@@ -50,23 +43,6 @@ function hasJapanese(text) {
   return false;
 }
 
-function fetch(url, timeout = 15000) {
-  return new Promise((resolve, reject) => {
-    const mod = url.startsWith('https') ? https : http;
-    const req = mod.get(url, { headers: HEADERS, timeout }, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return fetch(res.headers.location, timeout).then(resolve, reject);
-      }
-      const chunks = [];
-      res.on('data', (c) => chunks.push(c));
-      res.on('end', () => resolve(Buffer.concat(chunks).toString('utf-8')));
-      res.on('error', reject);
-    });
-    req.on('error', reject);
-    req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); });
-  });
-}
-
 function extractVideoId(url) {
   const m = url.match(
     /(?:watch\?v=|youtu\.be\/|embed\/|shorts\/|v\/)([A-Za-z0-9_-]{11})/
@@ -76,86 +52,35 @@ function extractVideoId(url) {
 
 // ── Transcript fetcher ───────────────────────────────────────────────────────
 
-async function fetchTranscript(videoId) {
-  // 1. Get video page HTML
-  let html;
+async function fetchVideoTranscript(videoId) {
+  // Use youtube-transcript-plus — handles PO tokens and all YouTube API complexity
   try {
-    html = await fetch(`https://www.youtube.com/watch?v=${videoId}`);
-  } catch {
+    const transcript = await fetchTranscript(videoId, { lang: 'ja' });
+    if (!transcript || !transcript.length) return null;
+
+    const segments = transcript.map((item, i) => ({
+      text: item.text,
+      start_time: Math.round((item.offset / 1000) * 1000) / 1000,
+      end_time: Math.round(((item.offset + item.duration) / 1000) * 1000) / 1000,
+      segment_index: i,
+      source: 'auto_generated',
+    }));
+
+    return { title: 'YouTube Video', segments };
+  } catch (err) {
+    // Library throws specific error types for different failure modes
+    if (err.name === 'YoutubeTranscriptNotAvailableLanguageError') {
+      // Japanese not available — try without language filter to check if any captions exist
+      try {
+        const anyTranscript = await fetchTranscript(videoId);
+        if (anyTranscript && anyTranscript.length) {
+          // Captions exist but not in Japanese
+          return { title: 'YouTube Video', segments: [], error: 'not_japanese' };
+        }
+      } catch { /* ignore */ }
+    }
     return null;
   }
-
-  // 2. Extract video title
-  let title = 'YouTube Video';
-  const titleMatch = html.match(/<title>(.*?)<\/title>/);
-  if (titleMatch) {
-    title = titleMatch[1]
-      .replace(' - YouTube', '')
-      .replace('&#39;', "'")
-      .replace(/&amp;/g, '&')
-      .trim();
-  }
-
-  // 3. Find caption track URLs
-  const timedtextMatches = [...html.matchAll(/"baseUrl"\s*:\s*"([^"]*timedtext[^"]*)"/g)];
-  let jaUrl = null;
-
-  for (const match of timedtextMatches) {
-    const cleaned = match[1].replace(/\\u0026/g, '&');
-    if (cleaned.includes('lang=ja') || cleaned.includes('lang%3Dja')) {
-      jaUrl = cleaned;
-      break;
-    }
-  }
-
-  if (!jaUrl) {
-    for (const match of timedtextMatches) {
-      const cleaned = match[1].replace(/\\u0026/g, '&');
-      if (cleaned.toLowerCase().includes('ja')) {
-        jaUrl = cleaned;
-        break;
-      }
-    }
-  }
-
-  if (!jaUrl) return null;
-
-  // 4. Fetch transcript XML
-  let xml;
-  try {
-    xml = await fetch(jaUrl);
-  } catch {
-    return null;
-  }
-
-  // 5. Parse XML segments
-  const segments = [];
-  const regex = /<text start="([\d.]+)" dur="([\d.]+)"[^>]*>(.*?)<\/text>/g;
-  let m;
-  while ((m = regex.exec(xml)) !== null) {
-    const start = parseFloat(m[1]);
-    const dur = parseFloat(m[2]);
-    let text = m[3]
-      .replace(/<[^>]+>/g, '')
-      .replace(/&amp;/g, '&')
-      .replace(/&#39;/g, "'")
-      .replace(/&quot;/g, '"')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .trim();
-    if (text) {
-      segments.push({
-        text,
-        start_time: Math.round(start * 1000) / 1000,
-        end_time: Math.round((start + dur) * 1000) / 1000,
-        segment_index: segments.length,
-        source: 'auto_generated',
-      });
-    }
-  }
-
-  if (!segments.length) return null;
-  return { title, segments };
 }
 
 // ── Vocabulary extraction ────────────────────────────────────────────────────
@@ -269,14 +194,21 @@ module.exports = async function handler(req, res) {
 
   try {
     // 1. Fetch transcript
-    const result = await fetchTranscript(videoId);
+    const result = await fetchVideoTranscript(videoId);
     if (!result) {
       return res.status(400).json({
         error: 'No Japanese captions found for this video. Try a video with Japanese subtitles.',
       });
     }
 
-    const { title: videoTitle, segments } = result;
+    const { title: videoTitle, segments, error: transcribeError } = result;
+
+    // If captions exist but not in Japanese
+    if (transcribeError === 'not_japanese') {
+      return res.status(400).json({
+        error: 'This video has captions, but Japanese subtitles are not available. Try a video with Japanese captions.',
+      });
+    }
 
     // 2. Validate Japanese content
     const sample = segments.slice(0, 20).map((s) => s.text).join(' ');

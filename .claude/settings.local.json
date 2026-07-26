@@ -43,7 +43,13 @@
       "Bash(yt-dlp --list-subs --no-download \"https://youtu.be/p9rGafP2J9U\")",
       "Read(//private/tmp/**)",
       "Bash(yt-dlp --write-auto-subs --sub-format srt --skip-download --sub-langs \"ja\" -o \"%\\(id\\)s.%\\(ext\\)s\" \"https://youtu.be/p9rGafP2J9U\")",
-      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/)"
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/)",
+      "Bash(yt-dlp --list-subs --skip-download \"https://www.youtube.com/watch?v=xwdp4N8MLO4\")",
+      "Bash(yt-dlp --write-subs --write-auto-subs --sub-format srt --skip-download --sub-langs \"ja\" -o \"test_%\\(id\\)s.%\\(ext\\)s\" \"https://www.youtube.com/watch?v=xwdp4N8MLO4\")",
+      "Bash(yt-dlp --write-subs --write-auto-subs --sub-format srt --skip-download --sub-langs \"ja\" --verbose -o \"/tmp/test2_%\\(id\\)s.%\\(ext\\)s\" \"https://www.youtube.com/watch?v=xwdp4N8MLO4\")",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Bash(npm init *)"
     ]
   },
   "enabledMcpjsonServers": [

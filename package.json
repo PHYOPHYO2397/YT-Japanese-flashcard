@@ -1,0 +1,24 @@
+{
+  "name": "yt-japanese-flashcard",
+  "version": "1.0.0",
+  "description": "A Claude Code–powered system that turns Japanese YouTube videos into structured JLPT-graded flashcard decks. It removes the manual work of extracting vocabulary from native content and converts passive watching into active study.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PHYOPHYO2397/YT-Japanese-flashcard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PHYOPHYO2397/YT-Japanese-flashcard/issues"
+  },
+  "homepage": "https://github.com/PHYOPHYO2397/YT-Japanese-flashcard#readme",
+  "dependencies": {
+    "youtube-transcript-plus": "^2.0.0"
+  }
+}
