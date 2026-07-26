@@ -368,6 +368,63 @@
     errorState.style.display = 'none';
   }
 
+  // ── YouTube URL input ─────────────────────
+  var ytUrl  = $('ytUrl');
+  var ytBtn  = $('ytBtn');
+
+  function extractVideoId(url) {
+    var patterns = [
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/v\/)([A-Za-z0-9_-]{11})/,
+      /^([A-Za-z0-9_-]{11})$/
+    ];
+    for (var i = 0; i < patterns.length; i++) {
+      var m = url.match(patterns[i]);
+      if (m) return m[1];
+    }
+    return null;
+  }
+
+  function loadFromYouTube() {
+    var url = ytUrl.value.trim();
+    if (!url) return;
+    var videoId = extractVideoId(url);
+    if (!videoId) {
+      showError('Invalid YouTube URL. Please paste a valid link.');
+      return;
+    }
+
+    ytBtn.disabled = true;
+    ytBtn.textContent = 'Loading...';
+    hideMessages();
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'output/flashcards-' + videoId + '.json', true);
+    xhr.onload = function () {
+      ytBtn.disabled = false;
+      ytBtn.textContent = 'Generate';
+      if (xhr.status === 200 || xhr.status === 0) {
+        try {
+          init(JSON.parse(xhr.responseText));
+        } catch (e) {
+          showError('Could not parse flashcard data. The JSON file may be malformed.');
+        }
+      } else {
+        showError('No flashcards found for this video. Run the pipeline first to generate them.');
+      }
+    };
+    xhr.onerror = function () {
+      ytBtn.disabled = false;
+      ytBtn.textContent = 'Generate';
+      showError('Could not load flashcard data. Make sure the JSON file exists in output/.');
+    };
+    xhr.send();
+  }
+
+  ytBtn.addEventListener('click', loadFromYouTube);
+  ytUrl.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); loadFromYouTube(); }
+  });
+
   // ── Load data ──────────────────────────────
   function loadDeck() {
     var dataScript = $('deckData');
