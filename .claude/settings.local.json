@@ -1,28 +1,4 @@
 {
-  "enabledMcpjsonServers": [
-    "youtube-transcript",
-    "youtube",
-    "magic"
-  ],
-  "mcpServers": {
-    "youtube-transcript": {
-      "description": "Primary YouTube transcript extraction.",
-      "tools": ["get_transcript"]
-    },
-    "youtube": {
-      "description": "Fallback YouTube transcript extraction.",
-      "tools": ["download_youtube_url"]
-    },
-    "magic": {
-      "description": "21st.dev UI component builder.",
-      "tools": [
-        "21st_magic_component_builder",
-        "21st_magic_component_inspiration",
-        "21st_magic_component_refiner",
-        "logo_search"
-      ]
-    }
-  },
   "permissions": {
     "allow": [
       "Bash(bash *)",
@@ -63,7 +39,39 @@
       "Bash(git check-ignore *)",
       "Bash(git *)",
       "Bash(mkdir -p /Users/phyophyomyatthu/YT-Japanese-flashcard/.claude/agents)",
-      "Bash(ln -s ../../subagents/vocabulary-extractor/SUBAGENT.md /Users/phyophyomyatthu/YT-Japanese-flashcard/.claude/agents/vocabulary-extractor.md)"
+      "Bash(ln -s ../../subagents/vocabulary-extractor/SUBAGENT.md /Users/phyophyomyatthu/YT-Japanese-flashcard/.claude/agents/vocabulary-extractor.md)",
+      "Bash(yt-dlp --list-subs --no-download \"https://youtu.be/p9rGafP2J9U\")",
+      "Read(//private/tmp/**)",
+      "Bash(yt-dlp --write-auto-subs --sub-format srt --skip-download --sub-langs \"ja\" -o \"%\\(id\\)s.%\\(ext\\)s\" \"https://youtu.be/p9rGafP2J9U\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/)"
     ]
+  },
+  "enabledMcpjsonServers": [
+    "youtube-transcript",
+    "youtube",
+    "magic"
+  ],
+  "mcpServers": {
+    "youtube-transcript": {
+      "description": "Primary YouTube transcript extraction.",
+      "tools": [
+        "get_transcript"
+      ]
+    },
+    "youtube": {
+      "description": "Fallback YouTube transcript extraction.",
+      "tools": [
+        "download_youtube_url"
+      ]
+    },
+    "magic": {
+      "description": "21st.dev UI component builder.",
+      "tools": [
+        "21st_magic_component_builder",
+        "21st_magic_component_inspiration",
+        "21st_magic_component_refiner",
+        "logo_search"
+      ]
+    }
   }
 }

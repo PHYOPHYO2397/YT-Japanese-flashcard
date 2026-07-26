@@ -374,7 +374,7 @@
 
   function extractVideoId(url) {
     var patterns = [
-      /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/v\/)([A-Za-z0-9_-]{11})/,
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/v\/|youtube\.com\/shorts\/)([A-Za-z0-9_-]{11})/,
       /^([A-Za-z0-9_-]{11})$/
     ];
     for (var i = 0; i < patterns.length; i++) {
@@ -394,30 +394,50 @@
     }
 
     ytBtn.disabled = true;
-    ytBtn.textContent = 'Loading...';
+    ytBtn.textContent = 'Generating...';
     hideMessages();
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'output/flashcards-' + videoId + '.json', true);
-    xhr.onload = function () {
+    // Try server API first, fall back to static file
+    var apiBase = window.location.origin;
+    var apiXhr = new XMLHttpRequest();
+    apiXhr.open('GET', apiBase + '/api/generate?url=' + encodeURIComponent(url), true);
+    apiXhr.onload = function () {
       ytBtn.disabled = false;
       ytBtn.textContent = 'Generate';
-      if (xhr.status === 200 || xhr.status === 0) {
+      if (apiXhr.status === 200) {
         try {
-          init(JSON.parse(xhr.responseText));
+          init(JSON.parse(apiXhr.responseText));
         } catch (e) {
-          showError('Could not parse flashcard data. The JSON file may be malformed.');
+          showError('Could not parse flashcard data.');
         }
       } else {
-        showError('No flashcards found for this video. Run the pipeline first to generate them.');
+        var resp;
+        try { resp = JSON.parse(apiXhr.responseText); } catch(e) {}
+        showError((resp && resp.error) || 'Pipeline failed. Check the server console.');
       }
     };
-    xhr.onerror = function () {
-      ytBtn.disabled = false;
-      ytBtn.textContent = 'Generate';
-      showError('Could not load flashcard data. Make sure the JSON file exists in output/.');
+    apiXhr.onerror = function () {
+      // No server running — try static file fallback
+      var fallback = new XMLHttpRequest();
+      fallback.open('GET', 'output/flashcards-' + videoId + '.json', true);
+      fallback.onload = function () {
+        ytBtn.disabled = false;
+        ytBtn.textContent = 'Generate';
+        if (fallback.status === 200 || fallback.status === 0) {
+          try { init(JSON.parse(fallback.responseText)); }
+          catch (e) { showError('Could not parse flashcard data.'); }
+        } else {
+          showError('No flashcards found. Run: python3 server.py');
+        }
+      };
+      fallback.onerror = function () {
+        ytBtn.disabled = false;
+        ytBtn.textContent = 'Generate';
+        showError('Could not connect. Run: python3 server.py');
+      };
+      fallback.send();
     };
-    xhr.send();
+    apiXhr.send();
   }
 
   ytBtn.addEventListener('click', loadFromYouTube);
