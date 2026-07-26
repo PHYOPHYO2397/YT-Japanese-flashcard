@@ -7,7 +7,13 @@
  *  3. Build flashcard deck JSON
  */
 
-const { fetchTranscript } = require('youtube-transcript-plus');
+const {
+  fetchTranscript,
+  YoutubeTranscriptNotAvailableLanguageError,
+  YoutubeTranscriptTooManyRequestError,
+  YoutubeTranscriptNotAvailableError,
+  YoutubeTranscriptDisabledError,
+} = require('youtube-transcript-plus');
 
 const STOPWORDS = new Set(
   ('は が を に へ で と も か の や よ ね わ から まで より だけ しか '
@@ -52,10 +58,37 @@ function extractVideoId(url) {
 
 // ── Transcript fetcher ───────────────────────────────────────────────────────
 
+/**
+ * Custom fetch wrapper with browser-like headers for YouTube requests.
+ * YouTube blocks requests from cloud IPs with bot-like headers.
+ */
+async function youtubeFetch(params) {
+  const res = await fetch(params.url, {
+    method: params.method || 'GET',
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+      'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      ...(params.headers || {}),
+    },
+    body: params.body,
+    signal: params.signal,
+  });
+  return res;
+}
+
 async function fetchVideoTranscript(videoId) {
-  // Use youtube-transcript-plus — handles PO tokens and all YouTube API complexity
+  // Attempt 1: youtube-transcript-plus with retries and browser-like headers
   try {
-    const transcript = await fetchTranscript(videoId, { lang: 'ja' });
+    const transcript = await fetchTranscript(videoId, {
+      lang: 'ja',
+      retries: 2,
+      retryDelay: 2000,
+      videoFetch: youtubeFetch,
+      playerFetch: youtubeFetch,
+      transcriptFetch: youtubeFetch,
+    });
     if (!transcript || !transcript.length) return null;
 
     const segments = transcript.map((item, i) => ({
@@ -68,16 +101,41 @@ async function fetchVideoTranscript(videoId) {
 
     return { title: 'YouTube Video', segments };
   } catch (err) {
-    // Library throws specific error types for different failure modes
-    if (err.name === 'YoutubeTranscriptNotAvailableLanguageError') {
-      // Japanese not available — try without language filter to check if any captions exist
+    // Japanese not available — check if any captions exist at all
+    if (err instanceof YoutubeTranscriptNotAvailableLanguageError) {
       try {
-        const anyTranscript = await fetchTranscript(videoId);
+        const anyTranscript = await fetchTranscript(videoId, {
+          retries: 1,
+          videoFetch: youtubeFetch,
+          playerFetch: youtubeFetch,
+          transcriptFetch: youtubeFetch,
+        });
         if (anyTranscript && anyTranscript.length) {
-          // Captions exist but not in Japanese
           return { title: 'YouTube Video', segments: [], error: 'not_japanese' };
         }
       } catch { /* ignore */ }
+      return null;
+    }
+    // TooManyRequests or other errors — retry once more after a delay
+    if (err instanceof YoutubeTranscriptTooManyRequestError) {
+      await new Promise((r) => setTimeout(r, 3000));
+      try {
+        const transcript = await fetchTranscript(videoId, {
+          lang: 'ja',
+          videoFetch: youtubeFetch,
+          playerFetch: youtubeFetch,
+          transcriptFetch: youtubeFetch,
+        });
+        if (!transcript || !transcript.length) return null;
+        const segments = transcript.map((item, i) => ({
+          text: item.text,
+          start_time: Math.round((item.offset / 1000) * 1000) / 1000,
+          end_time: Math.round(((item.offset + item.duration) / 1000) * 1000) / 1000,
+          segment_index: i,
+          source: 'auto_generated',
+        }));
+        return { title: 'YouTube Video', segments };
+      } catch { /* fall through to null */ }
     }
     return null;
   }
@@ -194,7 +252,32 @@ module.exports = async function handler(req, res) {
 
   try {
     // 1. Fetch transcript
-    const result = await fetchVideoTranscript(videoId);
+    let result;
+    try {
+      result = await fetchVideoTranscript(videoId);
+    } catch (err) {
+      // Map library errors to user-friendly messages
+      if (err instanceof YoutubeTranscriptNotAvailableError) {
+        return res.status(400).json({
+          error: 'This video does not have any captions (subtitles) available. Try a different video.',
+        });
+      }
+      if (err instanceof YoutubeTranscriptDisabledError) {
+        return res.status(400).json({
+          error: 'This video does not have any captions (subtitles) available. Try a different video.',
+        });
+      }
+      if (err instanceof YoutubeTranscriptTooManyRequestError) {
+        return res.status(429).json({
+          error: 'Something went wrong while downloading the transcript. Please try again. If the problem persists, the video may be too long or temporarily unavailable.',
+        });
+      }
+      // Unknown error
+      return res.status(500).json({
+        error: 'Something went wrong while downloading the transcript. Please try again.',
+      });
+    }
+
     if (!result) {
       return res.status(400).json({
         error: 'No Japanese captions found for this video. Try a video with Japanese subtitles.',
