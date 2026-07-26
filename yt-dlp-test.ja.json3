@@ -1,0 +1,3522 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  }, {
+    "mhModeHint": 2,
+    "juJustifCode": 0,
+    "sdScrollDir": 3
+  } ],
+  "wpWinPositions": [ {
+  
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 20,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 40
+  } ],
+  "events": [ {
+    "tStartMs": 0,
+    "dDurationMs": 464120,
+    "id": 1,
+    "wpWinPosId": 1,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 719,
+    "dDurationMs": 5401,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "こんにちは",
+      "acAsrConf": 224
+    }, {
+      "utf8": "ささ",
+      "tOffsetMs": 801,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ゆう",
+      "tOffsetMs": 1861,
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 1920,
+      "acAsrConf": 224
+    }, {
+      "utf8": "今日",
+      "tOffsetMs": 1981,
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 2940,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 4670,
+    "dDurationMs": 1450,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 4680,
+    "dDurationMs": 2639,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "jlpt",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 6110,
+    "dDurationMs": 1209,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 6120,
+    "dDurationMs": 4019,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "N",
+      "acAsrConf": 224
+    }, {
+      "utf8": "5",
+      "tOffsetMs": 60,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 7309,
+    "dDurationMs": 2830,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 7319,
+    "dDurationMs": 3661,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "言葉",
+      "acAsrConf": 224
+    }, {
+      "utf8": "カレンダー",
+      "tOffsetMs": 441,
+      "acAsrConf": 224
+    }, {
+      "utf8": "を",
+      "tOffsetMs": 1441,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 10129,
+    "dDurationMs": 851,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 10139,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "勉強",
+      "acAsrConf": 224
+    }, {
+      "utf8": "し",
+      "tOffsetMs": 121,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ましょう",
+      "tOffsetMs": 301,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 10970,
+    "dDurationMs": 2169,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 10980,
+    "dDurationMs": 5280,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 13129,
+    "dDurationMs": 3131,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 13139,
+    "dDurationMs": 4201,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "これ",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 301,
+      "acAsrConf": 224
+    }, {
+      "utf8": "今日",
+      "tOffsetMs": 420,
+      "acAsrConf": 224
+    }, {
+      "utf8": "勉強",
+      "tOffsetMs": 1861,
+      "acAsrConf": 224
+    }, {
+      "utf8": "する",
+      "tOffsetMs": 2040,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 16250,
+    "dDurationMs": 1090,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 16260,
+    "dDurationMs": 3779,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "言葉",
+      "acAsrConf": 224
+    }, {
+      "utf8": "の",
+      "tOffsetMs": 60,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 17330,
+    "dDurationMs": 2709,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 17340,
+    "dDurationMs": 4320,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "リスト",
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 120,
+      "acAsrConf": 224
+    }, {
+      "utf8": "よかっ",
+      "tOffsetMs": 680,
+      "acAsrConf": 207
+    }, {
+      "utf8": "たら",
+      "tOffsetMs": 1680,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 20029,
+    "dDurationMs": 1631,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 20039,
+    "dDurationMs": 3921,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "スクリーン",
+      "acAsrConf": 224
+    }, {
+      "utf8": "ショット",
+      "tOffsetMs": 601,
+      "acAsrConf": 224
+    }, {
+      "utf8": "を",
+      "tOffsetMs": 721,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 21650,
+    "dDurationMs": 2310,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 21660,
+    "dDurationMs": 2300,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "撮っ",
+      "acAsrConf": 216
+    }, {
+      "utf8": "てください",
+      "tOffsetMs": 119,
+      "acAsrConf": 216
+    } ]
+  }, {
+    "tStartMs": 25970,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 25980,
+    "dDurationMs": 2360,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 28910,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 28920,
+    "dDurationMs": 2300,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 31429,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 31439,
+    "dDurationMs": 2301,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 217
+    } ]
+  }, {
+    "tStartMs": 33950,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 33960,
+    "dDurationMs": 5300,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "テスト",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "いつ",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 840,
+      "acAsrConf": 224
+    }, {
+      "utf8": "か",
+      "tOffsetMs": 960,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 36530,
+    "dDurationMs": 2730,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 36540,
+    "dDurationMs": 2720,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今日",
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 420,
+      "acAsrConf": 224
+    }, {
+      "utf8": "よ",
+      "tOffsetMs": 600,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 39650,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 39660,
+    "dDurationMs": 4280,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "明日",
+      "acAsrConf": 220
+    } ]
+  }, {
+    "tStartMs": 42049,
+    "dDurationMs": 1891,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 42059,
+    "dDurationMs": 3180,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "明日",
+      "acAsrConf": 189
+    } ]
+  }, {
+    "tStartMs": 43930,
+    "dDurationMs": 1309,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 43940,
+    "dDurationMs": 3520,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 45229,
+    "dDurationMs": 2231,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 45239,
+    "dDurationMs": 3421,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 214
+    } ]
+  }, {
+    "tStartMs": 47450,
+    "dDurationMs": 1210,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 47460,
+    "dDurationMs": 4400,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "明日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 48650,
+    "dDurationMs": 3210,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 48660,
+    "dDurationMs": 3200,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "病院",
+      "acAsrConf": 224
+    }, {
+      "utf8": "へ行き",
+      "tOffsetMs": 480,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 1079,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 52970,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 52980,
+    "dDurationMs": 3330,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "明後日",
+      "acAsrConf": 198
+    } ]
+  }, {
+    "tStartMs": 55010,
+    "dDurationMs": 1300,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 55020,
+    "dDurationMs": 2460,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "あさって",
+      "acAsrConf": 197
+    } ]
+  }, {
+    "tStartMs": 56300,
+    "dDurationMs": 1180,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 56310,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 57470,
+    "dDurationMs": 1840,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 57480,
+    "dDurationMs": 3360,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 199
+    } ]
+  }, {
+    "tStartMs": 59300,
+    "dDurationMs": 1540,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 59310,
+    "dDurationMs": 2610,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 60830,
+    "dDurationMs": 1090,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 60840,
+    "dDurationMs": 3440,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "明後日",
+      "acAsrConf": 199
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 120,
+      "acAsrConf": 199
+    } ]
+  }, {
+    "tStartMs": 61910,
+    "dDurationMs": 2370,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 61920,
+    "dDurationMs": 2360,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 65210,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 65220,
+    "dDurationMs": 2299,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "昨日",
+      "acAsrConf": 214
+    } ]
+  }, {
+    "tStartMs": 67850,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 67860,
+    "dDurationMs": 2299,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "昨日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 71390,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 71400,
+    "dDurationMs": 2060,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 202
+    } ]
+  }, {
+    "tStartMs": 73490,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 73500,
+    "dDurationMs": 3860,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "昨日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 74330,
+    "dDurationMs": 3030,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 74340,
+    "dDurationMs": 3020,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "寿司",
+      "acAsrConf": 224
+    }, {
+      "utf8": "を",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "食べ",
+      "tOffsetMs": 720,
+      "acAsrConf": 224
+    }, {
+      "utf8": "まし",
+      "tOffsetMs": 779,
+      "acAsrConf": 224
+    }, {
+      "utf8": "た",
+      "tOffsetMs": 1020,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 77990,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 78000,
+    "dDurationMs": 5700,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "おととい",
+      "acAsrConf": 203
+    } ]
+  }, {
+    "tStartMs": 80690,
+    "dDurationMs": 3010,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 80700,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "おととい",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 84410,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 84420,
+    "dDurationMs": 3839,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 164
+    } ]
+  }, {
+    "tStartMs": 86510,
+    "dDurationMs": 1749,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 86520,
+    "dDurationMs": 4220,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "おととい",
+      "acAsrConf": 208
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 779,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 88249,
+    "dDurationMs": 2491,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 88259,
+    "dDurationMs": 2481,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 218
+    }, {
+      "utf8": "でし",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    }, {
+      "utf8": "た",
+      "tOffsetMs": 481,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 91190,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 91200,
+    "dDurationMs": 5540,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今週",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 93830,
+    "dDurationMs": 2910,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 93840,
+    "dDurationMs": 2900,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今週",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 97190,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 97200,
+    "dDurationMs": 3180,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 188
+    } ]
+  }, {
+    "tStartMs": 99050,
+    "dDurationMs": 1330,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 99060,
+    "dDurationMs": 4280,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今週",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 100370,
+    "dDurationMs": 2970,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 100380,
+    "dDurationMs": 2960,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "東京",
+      "acAsrConf": 224
+    }, {
+      "utf8": "へ行き",
+      "tOffsetMs": 419,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 840,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 104690,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 104700,
+    "dDurationMs": 2239,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来週",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 107510,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 107520,
+    "dDurationMs": 2480,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来週",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 110990,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 111000,
+    "dDurationMs": 2299,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 211
+    } ]
+  }, {
+    "tStartMs": 113330,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 113340,
+    "dDurationMs": 3110,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来週",
+      "acAsrConf": 224
+    }, {
+      "utf8": "一緒",
+      "tOffsetMs": 239,
+      "acAsrConf": 224
+    }, {
+      "utf8": "に",
+      "tOffsetMs": 1020,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 115130,
+    "dDurationMs": 1320,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 115140,
+    "dDurationMs": 3960,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "遊び",
+      "acAsrConf": 224
+    }, {
+      "utf8": "ませ",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "んか",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 116440,
+    "dDurationMs": 2660,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 116450,
+    "dDurationMs": 4770,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 119090,
+    "dDurationMs": 2130,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 119100,
+    "dDurationMs": 2120,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "先週",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 121550,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 121560,
+    "dDurationMs": 2599,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "先週",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 125090,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 125100,
+    "dDurationMs": 2760,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 126830,
+    "dDurationMs": 1030,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 126840,
+    "dDurationMs": 2100,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "先週",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 239,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 127850,
+    "dDurationMs": 1090,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 127860,
+    "dDurationMs": 3739,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "仕事",
+      "acAsrConf": 224
+    }, {
+      "utf8": "が",
+      "tOffsetMs": 60,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 128930,
+    "dDurationMs": 2669,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 128940,
+    "dDurationMs": 2659,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "忙しかっ",
+      "acAsrConf": 224
+    }, {
+      "utf8": "たです",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 133070,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 133080,
+    "dDurationMs": 5760,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 135830,
+    "dDurationMs": 3010,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 135840,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 140390,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 140400,
+    "dDurationMs": 3180,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 141949,
+    "dDurationMs": 1631,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 141959,
+    "dDurationMs": 3301,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 143570,
+    "dDurationMs": 1690,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 143580,
+    "dDurationMs": 4519,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "jlpt",
+      "acAsrConf": 224
+    }, {
+      "utf8": "の",
+      "tOffsetMs": 780,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 145250,
+    "dDurationMs": 2849,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 145260,
+    "dDurationMs": 2839,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "テスト",
+      "acAsrConf": 224
+    }, {
+      "utf8": "が",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "あり",
+      "tOffsetMs": 300,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 600,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 149510,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 149520,
+    "dDurationMs": 2120,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 152030,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 152040,
+    "dDurationMs": 2720,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 155690,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 155700,
+    "dDurationMs": 2000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 216
+    } ]
+  }, {
+    "tStartMs": 158330,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 158340,
+    "dDurationMs": 2250,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 159530,
+    "dDurationMs": 1060,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 159540,
+    "dDurationMs": 4140,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "北海道",
+      "acAsrConf": 224
+    }, {
+      "utf8": "へ行き",
+      "tOffsetMs": 779,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 900,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 160580,
+    "dDurationMs": 3100,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 160590,
+    "dDurationMs": 3090,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 163850,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 163860,
+    "dDurationMs": 2300,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "先月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 166790,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 166800,
+    "dDurationMs": 2360,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "先月",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 170390,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 170400,
+    "dDurationMs": 6440,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 214
+    } ]
+  }, {
+    "tStartMs": 172490,
+    "dDurationMs": 4350,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 172500,
+    "dDurationMs": 4340,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "先月",
+      "acAsrConf": 224
+    }, {
+      "utf8": "大阪",
+      "tOffsetMs": 239,
+      "acAsrConf": 224
+    }, {
+      "utf8": "へ行き",
+      "tOffsetMs": 1680,
+      "acAsrConf": 224
+    }, {
+      "utf8": "まし",
+      "tOffsetMs": 2099,
+      "acAsrConf": 224
+    }, {
+      "utf8": "た",
+      "tOffsetMs": 2280,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 176930,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 176940,
+    "dDurationMs": 5519,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今年",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 179449,
+    "dDurationMs": 3010,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 179459,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今年",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 183530,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 183540,
+    "dDurationMs": 6140,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 207
+    } ]
+  }, {
+    "tStartMs": 184970,
+    "dDurationMs": 4710,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 184980,
+    "dDurationMs": 4700,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今年",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 600,
+      "acAsrConf": 224
+    }, {
+      "utf8": "アメリカ",
+      "tOffsetMs": 660,
+      "acAsrConf": 224
+    }, {
+      "utf8": "へ行き",
+      "tOffsetMs": 2039,
+      "acAsrConf": 224
+    }, {
+      "utf8": "たい",
+      "tOffsetMs": 2399,
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 2580,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 190729,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 190739,
+    "dDurationMs": 2461,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来年",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 192090,
+    "dDurationMs": 1110,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 192100,
+    "dDurationMs": 3820,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 193190,
+    "dDurationMs": 2730,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 193200,
+    "dDurationMs": 2720,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来年",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 196430,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 196440,
+    "dDurationMs": 3180,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 206
+    } ]
+  }, {
+    "tStartMs": 198770,
+    "dDurationMs": 850,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 198780,
+    "dDurationMs": 2780,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "来年",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 199610,
+    "dDurationMs": 1950,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 199620,
+    "dDurationMs": 3960,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "国",
+      "acAsrConf": 218
+    }, {
+      "utf8": "へ",
+      "tOffsetMs": 420,
+      "acAsrConf": 218
+    }, {
+      "utf8": "帰り",
+      "tOffsetMs": 720,
+      "acAsrConf": 223
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 960,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 201550,
+    "dDurationMs": 2030,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 201560,
+    "dDurationMs": 2650,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 203570,
+    "dDurationMs": 640,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 203580,
+    "dDurationMs": 2400,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "去年",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 204200,
+    "dDurationMs": 1780,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 204210,
+    "dDurationMs": 3949,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 205970,
+    "dDurationMs": 2189,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 205980,
+    "dDurationMs": 2179,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "去年",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 208670,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 208680,
+    "dDurationMs": 2000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 199
+    } ]
+  }, {
+    "tStartMs": 210710,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 210720,
+    "dDurationMs": 3680,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "去年",
+      "acAsrConf": 219
+    }, {
+      "utf8": "日本",
+      "tOffsetMs": 60,
+      "acAsrConf": 224
+    }, {
+      "utf8": "に",
+      "tOffsetMs": 960,
+      "acAsrConf": 224
+    }, {
+      "utf8": "来まし",
+      "tOffsetMs": 1500,
+      "acAsrConf": 224
+    }, {
+      "utf8": "た",
+      "tOffsetMs": 1620,
+      "acAsrConf": 214
+    } ]
+  }, {
+    "tStartMs": 215869,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 215879,
+    "dDurationMs": 2241,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "毎日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 218809,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 218819,
+    "dDurationMs": 2301,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "毎日",
+      "acAsrConf": 217
+    } ]
+  }, {
+    "tStartMs": 223490,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 223500,
+    "dDurationMs": 5060,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 224
+    }, {
+      "utf8": "毎日",
+      "tOffsetMs": 360,
+      "acAsrConf": 220
+    }, {
+      "utf8": "日本",
+      "tOffsetMs": 540,
+      "acAsrConf": 224
+    }, {
+      "utf8": "語を",
+      "tOffsetMs": 1560,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 225830,
+    "dDurationMs": 2730,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 225840,
+    "dDurationMs": 2720,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "勉強",
+      "acAsrConf": 224
+    }, {
+      "utf8": "し",
+      "tOffsetMs": 119,
+      "acAsrConf": 224
+    }, {
+      "utf8": "てい",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 600,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 229190,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 229200,
+    "dDurationMs": 6020,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "なになに",
+      "acAsrConf": 212
+    }, {
+      "utf8": "習慣",
+      "tOffsetMs": 1140,
+      "acAsrConf": 217
+    } ]
+  }, {
+    "tStartMs": 232009,
+    "dDurationMs": 3211,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 232019,
+    "dDurationMs": 6421,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "なになに",
+      "acAsrConf": 224
+    }, {
+      "utf8": "習慣",
+      "tOffsetMs": 1500,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 235210,
+    "dDurationMs": 3230,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 235220,
+    "dDurationMs": 4180,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 198
+    }, {
+      "utf8": "2",
+      "tOffsetMs": 1000,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 238430,
+    "dDurationMs": 970,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 238440,
+    "dDurationMs": 3799,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "週間",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 239390,
+    "dDurationMs": 2849,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 239400,
+    "dDurationMs": 2839,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 219
+    }, {
+      "utf8": "が",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "あり",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 600,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 243050,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 243060,
+    "dDurationMs": 3319,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "なになに",
+      "acAsrConf": 224
+    }, {
+      "utf8": "花月",
+      "tOffsetMs": 1200,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 246670,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 246680,
+    "dDurationMs": 3600,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "なになに",
+      "acAsrConf": 223
+    }, {
+      "utf8": "か月",
+      "tOffsetMs": 1000,
+      "acAsrConf": 199
+    } ]
+  }, {
+    "tStartMs": 250369,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 250379,
+    "dDurationMs": 2940,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 252350,
+    "dDurationMs": 969,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 252360,
+    "dDurationMs": 5420,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "国",
+      "acAsrConf": 224
+    }, {
+      "utf8": "で",
+      "tOffsetMs": 60,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 253309,
+    "dDurationMs": 4471,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 253319,
+    "dDurationMs": 4461,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "6",
+      "acAsrConf": 224
+    }, {
+      "utf8": "ヶ月",
+      "tOffsetMs": 241,
+      "acAsrConf": 211
+    }, {
+      "utf8": "日本",
+      "tOffsetMs": 301,
+      "acAsrConf": 224
+    }, {
+      "utf8": "語",
+      "tOffsetMs": 1620,
+      "acAsrConf": 222
+    }, {
+      "utf8": "を",
+      "acAsrConf": 224
+    }, {
+      "utf8": "勉強",
+      "tOffsetMs": 1861,
+      "acAsrConf": 224
+    }, {
+      "utf8": "し",
+      "tOffsetMs": 1980,
+      "acAsrConf": 224
+    }, {
+      "utf8": "まし",
+      "tOffsetMs": 2221,
+      "acAsrConf": 224
+    }, {
+      "utf8": "た",
+      "tOffsetMs": 2461,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 262730,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 262740,
+    "dDurationMs": 6019,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "何々",
+      "acAsrConf": 194
+    }, {
+      "utf8": "面",
+      "tOffsetMs": 1019,
+      "acAsrConf": 155
+    } ]
+  }, {
+    "tStartMs": 265570,
+    "dDurationMs": 3189,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 265580,
+    "dDurationMs": 3179,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "なになに",
+      "acAsrConf": 193
+    }, {
+      "utf8": "年",
+      "tOffsetMs": 1000,
+      "acAsrConf": 200
+    } ]
+  }, {
+    "tStartMs": 269210,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 269220,
+    "dDurationMs": 4560,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "齢",
+      "acAsrConf": 201
+    } ]
+  }, {
+    "tStartMs": 270770,
+    "dDurationMs": 3010,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 270780,
+    "dDurationMs": 3930,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "2",
+      "acAsrConf": 224
+    }, {
+      "utf8": "年",
+      "tOffsetMs": 479,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ぐらい",
+      "tOffsetMs": 780,
+      "acAsrConf": 223
+    }, {
+      "utf8": "日本",
+      "tOffsetMs": 840,
+      "acAsrConf": 224
+    }, {
+      "utf8": "語を",
+      "tOffsetMs": 1979,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 273770,
+    "dDurationMs": 940,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 273780,
+    "dDurationMs": 4059,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "勉強",
+      "acAsrConf": 224
+    }, {
+      "utf8": "し",
+      "tOffsetMs": 180,
+      "acAsrConf": 224
+    }, {
+      "utf8": "てい",
+      "tOffsetMs": 419,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 660,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 274700,
+    "dDurationMs": 3139,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 274710,
+    "dDurationMs": 3129,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 278170,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 278180,
+    "dDurationMs": 4920,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "1993",
+      "acAsrConf": 224
+    }, {
+      "utf8": "年",
+      "tOffsetMs": 1000,
+      "acAsrConf": 224
+    }, {
+      "utf8": "に",
+      "tOffsetMs": 1360,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 280730,
+    "dDurationMs": 2370,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 280740,
+    "dDurationMs": 2360,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "生まれ",
+      "acAsrConf": 224
+    }, {
+      "utf8": "まし",
+      "tOffsetMs": 179,
+      "acAsrConf": 224
+    }, {
+      "utf8": "た",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 284350,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 284360,
+    "dDurationMs": 3240,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "なになに",
+      "acAsrConf": 222
+    }, {
+      "utf8": "会",
+      "tOffsetMs": 1059,
+      "acAsrConf": 190
+    } ]
+  }, {
+    "tStartMs": 285740,
+    "dDurationMs": 1860,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 285750,
+    "dDurationMs": 5150,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 287590,
+    "dDurationMs": 3310,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 287600,
+    "dDurationMs": 3300,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "なになに",
+      "acAsrConf": 224
+    }, {
+      "utf8": "会",
+      "tOffsetMs": 1240,
+      "acAsrConf": 188
+    } ]
+  }, {
+    "tStartMs": 291469,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 291479,
+    "dDurationMs": 1921,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "礼",
+      "acAsrConf": 199
+    } ]
+  }, {
+    "tStartMs": 291950,
+    "dDurationMs": 1450,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 291960,
+    "dDurationMs": 4380,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 293390,
+    "dDurationMs": 2950,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 293400,
+    "dDurationMs": 5840,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "一",
+      "acAsrConf": 197
+    }, {
+      "utf8": "週間",
+      "tOffsetMs": 780,
+      "acAsrConf": 224
+    }, {
+      "utf8": "に",
+      "tOffsetMs": 840,
+      "acAsrConf": 218
+    }, {
+      "utf8": "3",
+      "tOffsetMs": 1019,
+      "acAsrConf": 224
+    }, {
+      "utf8": "回",
+      "tOffsetMs": 1980,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 296330,
+    "dDurationMs": 2910,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 296340,
+    "dDurationMs": 2900,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "学校",
+      "acAsrConf": 224
+    }, {
+      "utf8": "へ行き",
+      "tOffsetMs": 540,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 780,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 299350,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 299360,
+    "dDurationMs": 3880,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 301129,
+    "dDurationMs": 2111,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 301139,
+    "dDurationMs": 5060,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "何",
+      "acAsrConf": 197
+    }, {
+      "utf8": "回",
+      "tOffsetMs": 661,
+      "acAsrConf": 197
+    } ]
+  }, {
+    "tStartMs": 303230,
+    "dDurationMs": 2969,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 303240,
+    "dDurationMs": 2959,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "何",
+      "acAsrConf": 199
+    }, {
+      "utf8": "回",
+      "tOffsetMs": 959,
+      "acAsrConf": 199
+    } ]
+  }, {
+    "tStartMs": 306830,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 306840,
+    "dDurationMs": 3960,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 224
+    }, {
+      "utf8": "1",
+      "acAsrConf": 218
+    } ]
+  }, {
+    "tStartMs": 308990,
+    "dDurationMs": 1810,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 309000,
+    "dDurationMs": 4680,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "ヶ月",
+      "acAsrConf": 224
+    }, {
+      "utf8": "に",
+      "tOffsetMs": 120,
+      "acAsrConf": 224
+    }, {
+      "utf8": "何",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "回",
+      "tOffsetMs": 1259,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 310790,
+    "dDurationMs": 2890,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 310800,
+    "dDurationMs": 6200,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "病院",
+      "acAsrConf": 224
+    }, {
+      "utf8": "へ行き",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 899,
+      "acAsrConf": 224
+    }, {
+      "utf8": "か",
+      "tOffsetMs": 1020,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 313670,
+    "dDurationMs": 3330,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 313680,
+    "dDurationMs": 3320,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "2",
+      "acAsrConf": 224
+    }, {
+      "utf8": "回",
+      "tOffsetMs": 1019,
+      "acAsrConf": 224
+    }, {
+      "utf8": "いき",
+      "acAsrConf": 199
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 1200,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 317930,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 317940,
+    "dDurationMs": 5699,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "日曜日",
+      "acAsrConf": 220
+    } ]
+  }, {
+    "tStartMs": 320629,
+    "dDurationMs": 3010,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 320639,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "日曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 324710,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 324720,
+    "dDurationMs": 3300,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 219
+    } ]
+  }, {
+    "tStartMs": 325990,
+    "dDurationMs": 2030,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 326000,
+    "dDurationMs": 4380,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "日曜日",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 1000,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 328010,
+    "dDurationMs": 2370,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 328020,
+    "dDurationMs": 2360,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 300,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 331430,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 331440,
+    "dDurationMs": 2479,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "月曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 333950,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 333960,
+    "dDurationMs": 3959,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "月曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 336570,
+    "dDurationMs": 1349,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 336580,
+    "dDurationMs": 3640,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 337909,
+    "dDurationMs": 2311,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 337919,
+    "dDurationMs": 2301,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "火曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 340370,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 340380,
+    "dDurationMs": 3480,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "火曜日",
+      "acAsrConf": 210
+    } ]
+  }, {
+    "tStartMs": 341340,
+    "dDurationMs": 2520,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 341350,
+    "dDurationMs": 3850,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 343850,
+    "dDurationMs": 1350,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 343860,
+    "dDurationMs": 3179,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "水曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 345190,
+    "dDurationMs": 1849,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 345200,
+    "dDurationMs": 4380,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 347029,
+    "dDurationMs": 2551,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 347039,
+    "dDurationMs": 2541,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "水曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 351230,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 351240,
+    "dDurationMs": 2420,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "木曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 353870,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 353880,
+    "dDurationMs": 3599,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "木曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 354870,
+    "dDurationMs": 2609,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 354880,
+    "dDurationMs": 5140,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 357469,
+    "dDurationMs": 2551,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 357479,
+    "dDurationMs": 2541,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "金曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 360650,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 360660,
+    "dDurationMs": 4080,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "金曜日",
+      "acAsrConf": 216
+    } ]
+  }, {
+    "tStartMs": 363360,
+    "dDurationMs": 1380,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 363370,
+    "dDurationMs": 3669,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 364730,
+    "dDurationMs": 2309,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 364740,
+    "dDurationMs": 2299,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "土曜日",
+      "acAsrConf": 223
+    } ]
+  }, {
+    "tStartMs": 367969,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 367979,
+    "dDurationMs": 2241,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "土曜日",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 372290,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 372300,
+    "dDurationMs": 2239,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "南曜日",
+      "acAsrConf": 221
+    } ]
+  }, {
+    "tStartMs": 375409,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 375419,
+    "dDurationMs": 2361,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "南曜日",
+      "acAsrConf": 220
+    } ]
+  }, {
+    "tStartMs": 380029,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 380039,
+    "dDurationMs": 3921,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "例",
+      "acAsrConf": 224
+    }, {
+      "utf8": "休み",
+      "tOffsetMs": 361,
+      "acAsrConf": 220
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 600,
+      "acAsrConf": 224
+    }, {
+      "utf8": "何曜日",
+      "tOffsetMs": 660,
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 1621,
+      "acAsrConf": 224
+    }, {
+      "utf8": "か",
+      "tOffsetMs": 1861,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 384110,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 384120,
+    "dDurationMs": 3680,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "水曜日",
+      "acAsrConf": 224
+    }, {
+      "utf8": "と",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "日曜日",
+      "tOffsetMs": 540,
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 1500,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 389150,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 389160,
+    "dDurationMs": 2240,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 391490,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 391500,
+    "dDurationMs": 2539,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 216
+    } ]
+  }, {
+    "tStartMs": 394550,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 394560,
+    "dDurationMs": 7699,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 202
+    } ]
+  }, {
+    "tStartMs": 396650,
+    "dDurationMs": 5609,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 396660,
+    "dDurationMs": 5599,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 224
+    }, {
+      "utf8": "時間",
+      "tOffsetMs": 420,
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 539,
+      "acAsrConf": 224
+    }, {
+      "utf8": "12",
+      "tOffsetMs": 920,
+      "acAsrConf": 224
+    }, {
+      "utf8": "時",
+      "tOffsetMs": 1920,
+      "acAsrConf": 224
+    }, {
+      "utf8": "から",
+      "tOffsetMs": 2099,
+      "acAsrConf": 224
+    }, {
+      "utf8": "1",
+      "tOffsetMs": 2220,
+      "acAsrConf": 224
+    }, {
+      "utf8": "時",
+      "tOffsetMs": 3060,
+      "acAsrConf": 224
+    }, {
+      "utf8": "まで",
+      "tOffsetMs": 3240,
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 3360,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 402830,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 402840,
+    "dDurationMs": 4880,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 240,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 404210,
+    "dDurationMs": 3510,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 404220,
+    "dDurationMs": 3500,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "土曜日",
+      "acAsrConf": 224
+    }, {
+      "utf8": "と",
+      "tOffsetMs": 120,
+      "acAsrConf": 224
+    }, {
+      "utf8": "日曜日",
+      "tOffsetMs": 319,
+      "acAsrConf": 224
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 1319,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 409070,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 409080,
+    "dDurationMs": 3480,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "皆",
+      "acAsrConf": 224
+    }, {
+      "utf8": "さん",
+      "tOffsetMs": 119,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 409969,
+    "dDurationMs": 2591,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 409979,
+    "dDurationMs": 4741,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "気",
+      "acAsrConf": 224
+    }, {
+      "utf8": "を",
+      "tOffsetMs": 60,
+      "acAsrConf": 224
+    }, {
+      "utf8": "つけ",
+      "tOffsetMs": 121,
+      "acAsrConf": 215
+    }, {
+      "utf8": "て",
+      "tOffsetMs": 241,
+      "acAsrConf": 215
+    }, {
+      "utf8": "ください",
+      "tOffsetMs": 361,
+      "acAsrConf": 219
+    } ]
+  }, {
+    "tStartMs": 412550,
+    "dDurationMs": 2170,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 412560,
+    "dDurationMs": 2600,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休み",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 359,
+      "acAsrConf": 198
+    } ]
+  }, {
+    "tStartMs": 414710,
+    "dDurationMs": 450,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 414720,
+    "dDurationMs": 3559,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "名詞",
+      "acAsrConf": 221
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 360,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 415150,
+    "dDurationMs": 3129,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 415160,
+    "dDurationMs": 3119,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 418610,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 418620,
+    "dDurationMs": 2870,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "休む",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 540,
+      "acAsrConf": 222
+    } ]
+  }, {
+    "tStartMs": 421010,
+    "dDurationMs": 480,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 421020,
+    "dDurationMs": 2399,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "動詞",
+      "acAsrConf": 202
+    }, {
+      "utf8": "です",
+      "tOffsetMs": 179,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 421480,
+    "dDurationMs": 1939,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 421490,
+    "dDurationMs": 4950,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 423409,
+    "dDurationMs": 3031,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 423419,
+    "dDurationMs": 3021,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "気",
+      "acAsrConf": 224
+    }, {
+      "utf8": "を",
+      "tOffsetMs": 120,
+      "acAsrConf": 224
+    }, {
+      "utf8": "つけ",
+      "tOffsetMs": 181,
+      "acAsrConf": 208
+    }, {
+      "utf8": "て",
+      "tOffsetMs": 301,
+      "acAsrConf": 221
+    }, {
+      "utf8": "ください",
+      "tOffsetMs": 421,
+      "acAsrConf": 219
+    } ]
+  }, {
+    "tStartMs": 427730,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 427740,
+    "dDurationMs": 5820,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "アルバイト",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 430550,
+    "dDurationMs": 3010,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 430560,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "アルバイト",
+      "acAsrConf": 219
+    } ]
+  }, {
+    "tStartMs": 434870,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 434880,
+    "dDurationMs": 3000,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "で",
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 436210,
+    "dDurationMs": 1670,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 436220,
+    "dDurationMs": 5940,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "今週",
+      "acAsrConf": 224
+    }, {
+      "utf8": "の",
+      "tOffsetMs": 1000,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 437870,
+    "dDurationMs": 4290,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 437880,
+    "dDurationMs": 4280,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "木曜日",
+      "acAsrConf": 224
+    }, {
+      "utf8": "は",
+      "tOffsetMs": 300,
+      "acAsrConf": 224
+    }, {
+      "utf8": "アルバイト",
+      "tOffsetMs": 740,
+      "acAsrConf": 224
+    }, {
+      "utf8": "が",
+      "tOffsetMs": 1740,
+      "acAsrConf": 224
+    }, {
+      "utf8": "あり",
+      "tOffsetMs": 1920,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 2099,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 442309,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 442319,
+    "dDurationMs": 8041,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "お",
+      "acAsrConf": 224
+    }, {
+      "utf8": "金が",
+      "tOffsetMs": 600,
+      "acAsrConf": 224
+    }, {
+      "utf8": "あり",
+      "tOffsetMs": 720,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ませ",
+      "tOffsetMs": 1201,
+      "acAsrConf": 224
+    }, {
+      "utf8": "んから",
+      "tOffsetMs": 1440,
+      "acAsrConf": 224
+    }, {
+      "utf8": "アルバイト",
+      "tOffsetMs": 2181,
+      "acAsrConf": 224
+    }, {
+      "utf8": "を",
+      "tOffsetMs": 3181,
+      "acAsrConf": 224
+    }, {
+      "utf8": "し",
+      "tOffsetMs": 3481,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ます",
+      "tOffsetMs": 3600,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 447820,
+    "dDurationMs": 2540,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 447830,
+    "dDurationMs": 5230,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "[音楽]"
+    } ]
+  }, {
+    "tStartMs": 450350,
+    "dDurationMs": 2710,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 450360,
+    "dDurationMs": 4760,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "みな",
+      "acAsrConf": 224
+    }, {
+      "utf8": "さん",
+      "tOffsetMs": 119,
+      "acAsrConf": 224
+    }, {
+      "utf8": "お",
+      "tOffsetMs": 239,
+      "acAsrConf": 224
+    }, {
+      "utf8": "疲れ",
+      "tOffsetMs": 959,
+      "acAsrConf": 224
+    }, {
+      "utf8": "様でし",
+      "tOffsetMs": 1200,
+      "acAsrConf": 224
+    }, {
+      "utf8": "た",
+      "tOffsetMs": 1440,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 453050,
+    "dDurationMs": 2070,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 453060,
+    "dDurationMs": 4139,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "次",
+      "acAsrConf": 224
+    }, {
+      "utf8": "も",
+      "tOffsetMs": 60,
+      "acAsrConf": 224
+    }, {
+      "utf8": "がんばり",
+      "tOffsetMs": 259,
+      "acAsrConf": 224
+    }, {
+      "utf8": "ましょう",
+      "tOffsetMs": 1259,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 455110,
+    "dDurationMs": 2089,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 455120,
+    "dDurationMs": 5079,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "よかっ",
+      "acAsrConf": 224
+    }, {
+      "utf8": "たら",
+      "tOffsetMs": 1000,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 457189,
+    "dDurationMs": 3010,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 457199,
+    "dDurationMs": 6921,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "チャンネル",
+      "acAsrConf": 224
+    }, {
+      "utf8": "登録",
+      "tOffsetMs": 361,
+      "acAsrConf": 224
+    }, {
+      "utf8": "高",
+      "tOffsetMs": 440,
+      "acAsrConf": 224
+    }, {
+      "utf8": "評価よろしく",
+      "tOffsetMs": 1620,
+      "acAsrConf": 224
+    }, {
+      "utf8": "お",
+      "tOffsetMs": 2461,
+      "acAsrConf": 224
+    }, {
+      "utf8": "願いし",
+      "tOffsetMs": 2641,
+      "acAsrConf": 224
+    } ]
+  }, {
+    "tStartMs": 460189,
+    "dDurationMs": 3931,
+    "wWinId": 1,
+    "aAppend": 1,
+    "segs": [ {
+      "utf8": "\n"
+    } ]
+  }, {
+    "tStartMs": 460199,
+    "dDurationMs": 3921,
+    "wWinId": 1,
+    "segs": [ {
+      "utf8": "ます",
+      "acAsrConf": 224
+    }, {
+      "utf8": "バイ",
+      "tOffsetMs": 620,
+      "acAsrConf": 219
+    }, {
+      "utf8": "バイ",
+      "tOffsetMs": 1620,
+      "acAsrConf": 198
+    } ]
+  } ]
+}

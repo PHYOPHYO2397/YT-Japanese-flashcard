@@ -1,0 +1,617 @@
+{
+  "video_id": "xwdp4N8MLO4",
+  "video_title": "JLPT N5(A1) 【Vocabulary - Calendar】 #11 ことば「カレンダー」",
+  "detected_language": "ja",
+  "vocabulary": [
+    {
+      "word": "休み",
+      "reading": "やすみ",
+      "meaning": "day off; holiday; break",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 8,
+      "timestamps": [61.92, 88.259, 239.4, 328.02, 389.16, 391.5, 402.84, 412.56],
+      "context": "明後日は休みです"
+    },
+    {
+      "word": "行く",
+      "reading": "いく",
+      "meaning": "to go",
+      "part_of_speech": "verb",
+      "jlpt_level": "N5",
+      "occurrence_count": 7,
+      "timestamps": [48.66, 100.38, 159.54, 172.5, 296.34, 310.8, 313.68],
+      "context": "明日病院へ行きます"
+    },
+    {
+      "word": "今日",
+      "reading": "きょう",
+      "meaning": "today",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 5,
+      "timestamps": [0.719, 13.139, 25.98, 28.92, 36.54],
+      "context": "こんにちはささゆうです今日は"
+    },
+    {
+      "word": "明日",
+      "reading": "あした",
+      "meaning": "tomorrow",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 5,
+      "timestamps": [39.66, 42.059, 45.239, 47.46, 48.66],
+      "context": "明日"
+    },
+    {
+      "word": "勉強",
+      "reading": "べんきょう",
+      "meaning": "study",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 5,
+      "timestamps": [10.139, 13.139, 225.84, 253.319, 273.78],
+      "context": "勉強しましょう"
+    },
+    {
+      "word": "今週",
+      "reading": "こんしゅう",
+      "meaning": "this week",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 5,
+      "timestamps": [91.2, 93.84, 99.06, 436.22, 437.88],
+      "context": "今週"
+    },
+    {
+      "word": "回",
+      "reading": "かい",
+      "meaning": "times; counter",
+      "part_of_speech": "other",
+      "jlpt_level": "N5",
+      "occurrence_count": 5,
+      "timestamps": [293.4, 301.139, 303.24, 309, 313.68],
+      "context": "一週間に3回"
+    },
+    {
+      "word": "来週",
+      "reading": "らいしゅう",
+      "meaning": "next week",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [104.7, 107.52, 111, 113.34],
+      "context": "来週"
+    },
+    {
+      "word": "先週",
+      "reading": "せんしゅう",
+      "meaning": "last week",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [119.1, 121.56, 126.84, 127.86],
+      "context": "先週"
+    },
+    {
+      "word": "来月",
+      "reading": "らいげつ",
+      "meaning": "next month",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [149.52, 152.04, 155.7, 158.34],
+      "context": "来月"
+    },
+    {
+      "word": "先月",
+      "reading": "せんげつ",
+      "meaning": "last month",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [163.86, 166.8, 170.4, 172.5],
+      "context": "先月"
+    },
+    {
+      "word": "今年",
+      "reading": "ことし",
+      "meaning": "this year",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [176.94, 179.459, 183.54, 184.98],
+      "context": "今年"
+    },
+    {
+      "word": "来年",
+      "reading": "らいねん",
+      "meaning": "next year",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [190.739, 193.2, 196.44, 198.78],
+      "context": "来年"
+    },
+    {
+      "word": "去年",
+      "reading": "きょねん",
+      "meaning": "last year",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [203.58, 205.98, 208.68, 210.72],
+      "context": "去年"
+    },
+    {
+      "word": "毎日",
+      "reading": "まいにち",
+      "meaning": "every day",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [215.879, 218.819, 223.5, 225.84],
+      "context": "毎日"
+    },
+    {
+      "word": "明後日",
+      "reading": "あさって",
+      "meaning": "day after tomorrow",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [52.98, 55.02, 60.84, 61.92],
+      "context": "明後日"
+    },
+    {
+      "word": "おととい",
+      "reading": "おととい",
+      "meaning": "day before yesterday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [78, 80.7, 86.52, 88.259],
+      "context": "おととい"
+    },
+    {
+      "word": "昨日",
+      "reading": "きのう",
+      "meaning": "yesterday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [65.22, 67.86, 73.5, 74.34],
+      "context": "昨日"
+    },
+    {
+      "word": "今月",
+      "reading": "こんげつ",
+      "meaning": "this month",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [133.08, 135.84, 141.959, 143.58],
+      "context": "今月"
+    },
+    {
+      "word": "月曜日",
+      "reading": "げつようび",
+      "meaning": "Monday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [331.44, 333.96, 337.919, 340.38],
+      "context": "月曜日"
+    },
+    {
+      "word": "火曜日",
+      "reading": "かようび",
+      "meaning": "Tuesday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [337.919, 340.38, 343.86, 345.2],
+      "context": "火曜日"
+    },
+    {
+      "word": "水曜日",
+      "reading": "すいようび",
+      "meaning": "Wednesday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [343.86, 345.2, 347.039, 384.12],
+      "context": "水曜日"
+    },
+    {
+      "word": "木曜日",
+      "reading": "もくようび",
+      "meaning": "Thursday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [351.24, 353.88, 354.88, 437.88],
+      "context": "木曜日"
+    },
+    {
+      "word": "金曜日",
+      "reading": "きんようび",
+      "meaning": "Friday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [357.479, 360.66, 363.37, 364.74],
+      "context": "金曜日"
+    },
+    {
+      "word": "土曜日",
+      "reading": "どようび",
+      "meaning": "Saturday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [364.74, 367.979, 404.22, 407.72],
+      "context": "土曜日"
+    },
+    {
+      "word": "アルバイト",
+      "reading": "アルバイト",
+      "meaning": "part-time job",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 4,
+      "timestamps": [427.74, 430.56, 437.88, 442.319],
+      "context": "アルバイト"
+    },
+    {
+      "word": "何回",
+      "reading": "なんかい",
+      "meaning": "how many times",
+      "part_of_speech": "expression",
+      "jlpt_level": "N5",
+      "occurrence_count": 3,
+      "timestamps": [301.139, 303.24, 309],
+      "context": "何回"
+    },
+    {
+      "word": "病院",
+      "reading": "びょういん",
+      "meaning": "hospital",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 3,
+      "timestamps": [48.66, 310.8, 313.68],
+      "context": "明日病院へ行きます"
+    },
+    {
+      "word": "言葉",
+      "reading": "ことば",
+      "meaning": "word; language",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 3,
+      "timestamps": [7.319, 16.26, 20.039],
+      "context": "言葉カレンダーを"
+    },
+    {
+      "word": "日曜日",
+      "reading": "にちようび",
+      "meaning": "Sunday",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 3,
+      "timestamps": [317.94, 320.639, 384.12],
+      "context": "日曜日"
+    },
+    {
+      "word": "日本語",
+      "reading": "にほんご",
+      "meaning": "Japanese language",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 3,
+      "timestamps": [223.5, 253.319, 270.78],
+      "context": "毎日日本語を"
+    },
+    {
+      "word": "ヶ月",
+      "reading": "かげつ",
+      "meaning": "months (duration counter)",
+      "part_of_speech": "other",
+      "jlpt_level": "N5",
+      "occurrence_count": 3,
+      "timestamps": [246.68, 253.319, 309],
+      "context": "なになにか月"
+    },
+    {
+      "word": "カレンダー",
+      "reading": "カレンダー",
+      "meaning": "calendar",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 2,
+      "timestamps": [7.319, 10.98],
+      "context": "言葉カレンダーを"
+    },
+    {
+      "word": "テスト",
+      "reading": "テスト",
+      "meaning": "test; exam",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 2,
+      "timestamps": [33.96, 145.26],
+      "context": "テストはいつですか"
+    },
+    {
+      "word": "学校",
+      "reading": "がっこう",
+      "meaning": "school",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 2,
+      "timestamps": [296.34, 310.8],
+      "context": "学校へ行きます"
+    },
+    {
+      "word": "一週間",
+      "reading": "いっしゅうかん",
+      "meaning": "one week",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 2,
+      "timestamps": [293.4, 301.139],
+      "context": "一週間に3回"
+    },
+    {
+      "word": "国",
+      "reading": "くに",
+      "meaning": "country",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 2,
+      "timestamps": [199.62, 252.36],
+      "context": "国へ帰ります"
+    },
+    {
+      "word": "習慣",
+      "reading": "しゅうかん",
+      "meaning": "habit; custom",
+      "part_of_speech": "noun",
+      "jlpt_level": "N4",
+      "occurrence_count": 2,
+      "timestamps": [229.2, 232.019],
+      "context": "なになに習慣"
+    },
+    {
+      "word": "年",
+      "reading": "ねん",
+      "meaning": "year (duration counter)",
+      "part_of_speech": "other",
+      "jlpt_level": "N5",
+      "occurrence_count": 2,
+      "timestamps": [265.58, 270.78],
+      "context": "なになに年"
+    },
+    {
+      "word": "気をつける",
+      "reading": "きをつける",
+      "meaning": "to be careful",
+      "part_of_speech": "expression",
+      "jlpt_level": "N4",
+      "occurrence_count": 2,
+      "timestamps": [409.979, 423.419],
+      "context": "気をつけてください"
+    },
+    {
+      "word": "食べる",
+      "reading": "たべる",
+      "meaning": "to eat",
+      "part_of_speech": "verb",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [74.34],
+      "context": "寿司を食べました"
+    },
+    {
+      "word": "寿司",
+      "reading": "すし",
+      "meaning": "sushi",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [74.34],
+      "context": "寿司を食べました"
+    },
+    {
+      "word": "仕事",
+      "reading": "しごと",
+      "meaning": "work; job",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [127.86],
+      "context": "仕事が忙しかったです"
+    },
+    {
+      "word": "忙しい",
+      "reading": "いそがしい",
+      "meaning": "busy",
+      "part_of_speech": "adjective",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [128.94],
+      "context": "仕事が忙しかったです"
+    },
+    {
+      "word": "東京",
+      "reading": "とうきょう",
+      "meaning": "Tokyo",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [100.38],
+      "context": "東京へ行きます"
+    },
+    {
+      "word": "北海道",
+      "reading": "ほっかいどう",
+      "meaning": "Hokkaido",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [159.54],
+      "context": "北海道へ行きます"
+    },
+    {
+      "word": "大阪",
+      "reading": "おおさか",
+      "meaning": "Osaka",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [172.5],
+      "context": "先月大阪へ行きました"
+    },
+    {
+      "word": "帰る",
+      "reading": "かえる",
+      "meaning": "to return; to go home",
+      "part_of_speech": "verb",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [199.62],
+      "context": "国へ帰ります"
+    },
+    {
+      "word": "日本",
+      "reading": "にほん",
+      "meaning": "Japan",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [210.72],
+      "context": "去年日本に来ました"
+    },
+    {
+      "word": "来る",
+      "reading": "くる",
+      "meaning": "to come",
+      "part_of_speech": "verb",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [210.72],
+      "context": "去年日本に来ました"
+    },
+    {
+      "word": "週間",
+      "reading": "しゅうかん",
+      "meaning": "week (duration suffix)",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [238.44],
+      "context": "週間"
+    },
+    {
+      "word": "生まれる",
+      "reading": "うまれる",
+      "meaning": "to be born",
+      "part_of_speech": "verb",
+      "jlpt_level": "N4",
+      "occurrence_count": 1,
+      "timestamps": [280.74],
+      "context": "生まれました"
+    },
+    {
+      "word": "一緒に",
+      "reading": "いっしょに",
+      "meaning": "together",
+      "part_of_speech": "adverb",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [113.34],
+      "context": "来週一緒に"
+    },
+    {
+      "word": "遊ぶ",
+      "reading": "あそぶ",
+      "meaning": "to play; to hang out",
+      "part_of_speech": "verb",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [115.14],
+      "context": "遊びませんか"
+    },
+    {
+      "word": "お金",
+      "reading": "おかね",
+      "meaning": "money",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [442.319],
+      "context": "お金がありませんからアルバイトをします"
+    },
+    {
+      "word": "する",
+      "reading": "する",
+      "meaning": "to do",
+      "part_of_speech": "verb",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [442.319],
+      "context": "アルバイトをします"
+    },
+    {
+      "word": "皆さん",
+      "reading": "みなさん",
+      "meaning": "everyone",
+      "part_of_speech": "expression",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [409.08],
+      "context": "皆さん"
+    },
+    {
+      "word": "次",
+      "reading": "つぎ",
+      "meaning": "next",
+      "part_of_speech": "noun",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [453.06],
+      "context": "次もがんばりましょう"
+    },
+    {
+      "word": "頑張る",
+      "reading": "がんばる",
+      "meaning": "to do one's best",
+      "part_of_speech": "verb",
+      "jlpt_level": "N4",
+      "occurrence_count": 1,
+      "timestamps": [453.06],
+      "context": "次もがんばりましょう"
+    },
+    {
+      "word": "休む",
+      "reading": "やすむ",
+      "meaning": "to rest; to take off",
+      "part_of_speech": "verb",
+      "jlpt_level": "N5",
+      "occurrence_count": 1,
+      "timestamps": [418.62],
+      "context": "休むは"
+    },
+    {
+      "word": "お疲れ様",
+      "reading": "おつかれさま",
+      "meaning": "good work; thanks for your effort",
+      "part_of_speech": "expression",
+      "jlpt_level": "N4",
+      "occurrence_count": 1,
+      "timestamps": [450.36],
+      "context": "みなさんお疲れ様でした"
+    }
+  ]
+}

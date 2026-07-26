@@ -249,7 +249,7 @@ After vocabulary extraction succeeds with a non-empty vocabulary list, transform
 
 The VocabularyList from the subagent (see Vocabulary Extraction section):
 - `video_id`, `video_title`
-- `vocabulary[]`: each with `word`, `occurrence_count`, `timestamps`, `context`
+- `vocabulary[]`: each with `word`, `reading`, `meaning`, `part_of_speech`, `jlpt_level`, `occurrence_count`, `timestamps`, `context`
 
 ### Mapping Rules
 
@@ -258,13 +258,13 @@ For each item in `vocabulary[]`, produce a flashcard:
 1. **ID**: Sequential, zero-padded: `card-001`, `card-002`, ..., `card-NNN`
    - IDs match the 1-based index in the sorted vocabulary array
 
-2. **Front**: The `word` field as-is (preserve original script — kanji, kana, Latin, Hangul, etc.)
+2. **Front**: The `word` field as-is (preserve original script — kanji, kana, etc.)
 
-3. **Back**: An object with all available fields:
-   - `reading`: `word` from source if available; otherwise empty string `""`
-   - `meaning`: `context` snippet from first occurrence if available; otherwise empty string `""`
-   - `part_of_speech`: If source provides it, include it; otherwise `"unknown"`
-   - `jlpt_level`: If source provides it, include it; otherwise `"N/A"` (not applicable for non-Japanese)
+3. **Back**: An object mapping directly from the vocabulary source:
+   - `reading`: `reading` from source (hiragana reading); otherwise empty string `""`
+   - `meaning`: `meaning` from source (English gloss); otherwise empty string `""`
+   - `part_of_speech`: `part_of_speech` from source; otherwise `"unknown"`
+   - `jlpt_level`: `jlpt_level` from source; otherwise `"N/A"`
    - `occurrence_count`: From source (integer)
 
 4. **YouTube link**: Primary timestamp link:
@@ -326,18 +326,18 @@ Produce a complete FlashcardDeck JSON object matching this schema:
 
 ### Language-Agnostic Fields
 
-When the vocabulary source does not provide JLPT levels, readings, or parts of speech (as is the case for non-Japanese transcripts):
+The Japanese vocabulary-extractor subagent provides all language-specific fields (`reading`, `meaning`, `part_of_speech`, `jlpt_level`). These are mapped directly into the flashcard `back` object.
+
+If the source does NOT provide a field (e.g., for non-Japanese content or edge cases), use these fallbacks:
 
 | Field | Fallback Value | Notes |
 |-------|---------------|-------|
-| `back.reading` | `""` | Empty if source language has no phonetic reading field |
-| `back.meaning` | First `context` snippet | Serves as usage context when no translation available |
-| `back.part_of_speech` | `"unknown"` | Can be enriched later by language-specific subagents |
-| `back.jlpt_level` | `"N/A"` | Non-Japanese content has no JLPT classification |
+| `back.reading` | `""` | Empty if source has no phonetic reading |
+| `back.meaning` | First `context` snippet | Usage context when no translation available |
+| `back.part_of_speech` | `"unknown"` | Default if classification missing |
+| `back.jlpt_level` | `"N/A"` | Non-Japanese or unclassified content |
 | `card.jlpt_level` | `"N/A"` | Same as above |
 | `meta.jlpt_breakdown` | `{ "N/A": total_cards }` | All cards fall into N/A for non-JLPT content |
-
-When a future Japanese-specific vocabulary subagent provides JLPT levels, readings, and parts of speech, these fields will be populated from the source and the breakdown will show proper N5/N4/N3 counts.
 
 ### Metadata Generation
 

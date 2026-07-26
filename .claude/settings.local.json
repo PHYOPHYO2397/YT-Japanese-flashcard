@@ -49,7 +49,8 @@
       "Bash(yt-dlp --write-subs --write-auto-subs --sub-format srt --skip-download --sub-langs \"ja\" --verbose -o \"/tmp/test2_%\\(id\\)s.%\\(ext\\)s\" \"https://www.youtube.com/watch?v=xwdp4N8MLO4\")",
       "mcp__context7__resolve-library-id",
       "mcp__context7__query-docs",
-      "Bash(npm init *)"
+      "Bash(npm init *)",
+      "Bash(yt-dlp *)"
     ]
   },
   "enabledMcpjsonServers": [
